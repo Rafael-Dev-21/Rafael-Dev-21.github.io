@@ -1,1 +1,1 @@
-alert(Date.now());
+alert("O site ainda está em construção.");
