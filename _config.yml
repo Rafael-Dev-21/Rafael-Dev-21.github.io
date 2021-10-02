@@ -1,4 +1,4 @@
-theme: slate
+remote_theme: page-theme/slate
 lsi: false
 safe: true
 incremental: false
