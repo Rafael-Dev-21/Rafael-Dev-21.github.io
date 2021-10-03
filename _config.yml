@@ -8,5 +8,6 @@ url: "https://rafael-dev-21.netlify.app"
 
 plugins:
   - jekyll-feed
+  - jekyll-netlify
 
 permalink: /blog/:year/:month/:day/:title
