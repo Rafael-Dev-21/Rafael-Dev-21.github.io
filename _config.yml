@@ -1,4 +1,7 @@
 name: Rafael Dev 21, O Rayquaza Boladão
 markdown: kramdown
 
+disqus:
+  shortname: rayquazaboladao
+
 permalink: /blog/:year/:month/:day/:title
