@@ -13,12 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: install bundler
-      run:
-        gem install bundler
-    - name: Gen Gemfile.lock
-      run:
-        bundle install
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
