@@ -3,5 +3,7 @@ markdown: kramdown
 
 disqus:
   shortname: rayquazaboladao
+  
+url: "https://rafael-dev-21.netlify.app"
 
 permalink: /blog/:year/:month/:day/:title
