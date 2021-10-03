@@ -6,4 +6,12 @@ disqus:
   
 url: "https://rafael-dev-21.netlify.app"
 
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+
+paginate-path: "/blog/page:num/"
+
 permalink: /blog/:year/:month/:day/:title

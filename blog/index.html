@@ -6,7 +6,34 @@ title: Blog do Rafael Dev 21
 <h1>{{ page.title }}</h1>
 <ul class="posts">
   
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+<!-- pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">« Anterior</a>
+  {% else %}
+    <span class="previus">« Anterior</span>
+  {% endif %}
+  
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elseif page == 1 %}
+      <a href="{{ '/' | relative_url }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Próximo »</a>
+  {% else %}
+    <span>Próximo »</span>
+  {% endif %}
+</div>
+{% endif %}
