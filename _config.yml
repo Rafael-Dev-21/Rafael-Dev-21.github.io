@@ -13,5 +13,3 @@ plugins:
 paginate: 5
 
 paginate-path: "/blog/page:num/"
-
-permalink: /blog/:year/:month/:day/:title
