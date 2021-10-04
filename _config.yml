@@ -9,5 +9,16 @@ url: "https://rafael-dev-21.netlify.app"
 plugins:
   - jekyll-feed
   - jekyll-netlify
+  
+collections:
+  jogos:
+    - output: true
+    - description: true
+    - title: true
+    - cover: true
+    - jogo_url: true
+    - width: true
+    - height: true
 
 permalink: /blog/:year/:month/:day/:title
+permalink: /jogos/:year/:month/:day/:title

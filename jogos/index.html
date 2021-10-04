@@ -1,0 +1,17 @@
+---
+layout: default
+title: Jogos
+---
+<h1>{{ page.title }}</h1>
+<ul class="posts">
+  
+  {% for jogo in site.jogos %}
+  
+  <li><div class="jogo">
+    <a href="{{ page.url }}"><img href="{{ jogo.cover }}" /></a>
+    <h3><span>{{ jogo.date | date_to_string }}</span> » <a href="{{ page.url }}">{{ jogo.title }}</a></h3>
+    <p>{{ jogo.description }}</p>
+  </div></li>
+  
+  {% endfor %}
+</ul>
