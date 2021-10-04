@@ -21,3 +21,4 @@ collections:
     - height: true
 
 permalink: /blog/:year/:month/:day/:title
+permalink: /jogos/:year/:month/:day/:title
