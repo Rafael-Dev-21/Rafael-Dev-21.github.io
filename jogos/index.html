@@ -1,13 +1,11 @@
 ---
 layout: default
-title: Jogos
-jogos:
-	- title: Jogo da Cobrinha
-	  url: /snake
+title: jogos
 ---
+
 <h1>{{ page.title }}</h1>
 <ul class="posts">
-  {% for jogo in jogos %}
+  {% for jogo in site.data.samplelist.jogos %}
 
   <li><a href="{{ jogo.url }}">{{ jogo.title }}</a></li>
 
