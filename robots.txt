@@ -1,3 +1,2 @@
 User-Agent: *
-Disallow: /jogos/
 sitemap: /sitemap.xml

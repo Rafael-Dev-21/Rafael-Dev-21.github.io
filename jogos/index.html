@@ -1,17 +1,15 @@
----
+--
 layout: default
 title: Jogos
+jogos:
+	- title: Jogo da Cobrinha
+	  url: /snake
 ---
 <h1>{{ page.title }}</h1>
 <ul class="posts">
-  
-  {% for jogo in site.jogos %}
-  
-  <li><div class="jogo">
-    <a href="{{ page.url }}"><img href="{{ jogo.cover }}" /></a>
-    <h3><span>{{ jogo.date | date_to_string }}</span> » <a href="{{ page.url }}">{{ jogo.title }}</a></h3>
-    <p>{{ jogo.description }}</p>
-  </div></li>
-  
+  {% for jogo in jogos %}
+
+  <li><a href="{{ jogo.url }}">{{ jogo.title }}</a></li>
+
   {% endfor %}
 </ul>
