@@ -1,0 +1,3 @@
+[submodule "snake"]
+	path = snake
+	url = https://github.com/rafael-dev-21/SnakeClone
