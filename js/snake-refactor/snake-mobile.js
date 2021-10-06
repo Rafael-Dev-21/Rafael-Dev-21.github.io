@@ -57,8 +57,8 @@ $(function($){
         
         dataLayer.push({
           event: 'game',
-          type: 'start',
-          data: {start_time: performance.now()}
+          status: 'start',
+          time: performance.now()
         });
       }
       
@@ -70,8 +70,9 @@ $(function($){
           
           dataLayer.push({
             event: 'game',
-            type: 'over',
-            data: {score: score, end_time: performance.now()}
+            status: 'over',
+            score: score,
+            time: performance.now()
           });
           return;
         }
