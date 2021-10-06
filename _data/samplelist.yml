@@ -1,5 +1,5 @@
 jogos:
   - title: "Jogo Da Cobrinha"
-    url: /jogos/snake
+    url: /snake
   - title: "Jogo Da Cobrinha Refatorado"
     url: /jogos/snake-refactor
