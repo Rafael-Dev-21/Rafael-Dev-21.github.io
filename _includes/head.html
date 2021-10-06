@@ -8,9 +8,9 @@
     <!-- link do estilo -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     
-    {% if page.style %}
+    {% if page.head %}
     
-    <link rel="stylesheet" href="/css/{{ page.style }}.css">
+    {% include {{ page.head }} %}
     
     {% endif %}
     
