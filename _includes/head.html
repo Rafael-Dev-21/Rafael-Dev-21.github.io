@@ -8,6 +8,16 @@
     <!-- link do estilo -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     
+    {% if page.styles %}
+    
+    {% for style in pages.styles %}
+    
+    <link rel="stylesheet" href="/css/{{ style }}.css">
+    
+    {% endfor %}
+    
+    {%™endif %}
+    
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>

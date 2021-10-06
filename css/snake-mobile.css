@@ -1,0 +1,60 @@
+div, canvas, p {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+* {
+  text-align: center;
+}
+
+.FinishScreen, #canvasArea {
+  display: none;
+}
+
+div#game-container,
+div#controls {
+  margin-left: auto;
+  margin-right: auto;
+  width: 216px;
+}
+
+div#controls {
+  margin-top: 32px;
+  visibility: hidden;
+  width: 216px;
+  height: 216px;
+}
+
+div.control {
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  border: 1px solid darkblue;
+}
+
+div#up {
+  background-color: lightskyblue;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div#left {
+  background-color: lightskyblue;
+  text-align: center;
+  float: left;
+  margin-top: -32px;
+}
+
+div#right {
+  background-color: lightskyblue;
+  text-align: center;
+  float: right;
+  margin-top: -32px;
+}
+
+div#down {
+  background-color: lightskyblue;
+  text-align: center;
+  margin: 3px auto;
+}
