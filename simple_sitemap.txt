@@ -1,0 +1,12 @@
+---
+---
+{% for post in site.posts %}
+https://rafael-dev-21.netlify.app{{ post.url | remove: index.html }}
+{% endfor %}
+{% for page in site.pages %}
+{% if page.layout != nil %}
+{% if page.layout != 'feed' %}
+https://rafael-dev-21.netlify.app{{ page.url | remove: index.html }}
+{% endif %}
+{% endif %}
+{% endfor %}
