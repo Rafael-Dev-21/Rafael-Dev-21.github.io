@@ -1,5 +1,6 @@
 User-Agent: Googlebot
 Disallow: /nogooglebot/
+Allow: /sitemap.xml
 
 User-Agent: *
 Allow: /
