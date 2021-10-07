@@ -1,2 +1,2 @@
 User-Agent: *
-sitemap: /sitemap.xml
+sitemap: https://rafael-dev-21.netlify.app/sitemap.xml
