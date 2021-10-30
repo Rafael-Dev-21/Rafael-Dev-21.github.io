@@ -15,6 +15,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Títuto", name: "title", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Data de Publicação", name: "date", widget: "datetime"}
       - {label: "Comentários", name: "comments", widget: "boolean"}
       - {label: "MathJax", name: "usemathjax", widget: "boolean"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
