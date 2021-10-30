@@ -1,0 +1,12 @@
+<!-- for mathjax support -->
+{% if page.usemathjax %}
+    
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/lastest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+  </script>
+{% endif %}
+
+<script src="js/lib/jquery-3.6.0.min.js"></script>
