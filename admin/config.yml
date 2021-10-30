@@ -5,3 +5,16 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Títuto", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Comentários", name: "comments", widget: "boolean"}
+      - {label: "MathJax", name: "usemathjax", widget: "boolean"}
