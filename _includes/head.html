@@ -16,6 +16,17 @@
     
     {% endif %}
     
+    <!-- for mathjax support -->
+    {% if page.usemathjax %}
+    
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+    
+    {% endif %}
+    
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
