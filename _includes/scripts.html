@@ -1,21 +1,25 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
 <!-- for mathjax support -->
 {% if page.usemathjax %}
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/lastest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script>
+    MathJax = {
+      loader: {
+        load: ['[tex]/mhchem']
+      },
+      tex: {
+        packages: {
+          '[+]': ['mhchem']
+        },
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    }
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML_CSS"],
-    tex2jax: {
-      inlineMath: [['$', '$'], ["\\(", "\\)"]],
-      displayMath: [['$$', '$$'], ["\\[", "\\]"]],
-      processEscapes: true
-    },
-    "HTML-CSS": { avaliableFonts: ["TeX"]}
-  });
-</script>
 
 <script src="js/lib/jquery-3.6.0.min.js"></script>
 
