@@ -5,5 +5,6 @@ Allow: /sitemap.xml
 User-Agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /secret/
 
 Sitemap: https://rafael-dev-21.netlify.app/sitemap.xml
