@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://rafael-dev-21.netlify.app/notas/*"
+  to = "https://publish.obsidian.md/serve?url=rafael-dev-21.netlify.app/notas/:splat"
+  status = 200
+  force = true
