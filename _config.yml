@@ -30,3 +30,5 @@ jekyll_admin:
     - configuration
 
 permalink: /blog/:year/:month/:day/:title
+
+theme: jekyll-theme-minimal
