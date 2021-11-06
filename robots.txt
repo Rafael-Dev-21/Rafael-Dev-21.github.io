@@ -1,10 +1,20 @@
 User-Agent: Googlebot
 Disallow: /nogooglebot/
+
+User-Agent: *
 Allow: /sitemap.xml
 
 User-Agent: *
+Allow: /feed.xml
+
+User-Agent: *
 Allow: /
+
+User-Agent: *
 Disallow: /admin/
+
+User-Agent: *
 Disallow: /secret/
+
 
 Sitemap: https://rafael-dev-21.netlify.app/sitemap.xml
