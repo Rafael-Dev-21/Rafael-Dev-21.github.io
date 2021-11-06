@@ -1,6 +1,28 @@
 name: Rafael Dev 21, O Rayquaza Boladão
 markdown: kramdown
 
+title: Rafael Dev 21
+
+tagline: Um blog e site dedicado a matemática e programação
+
+description: Este site, criado com o intuito de ser uma página pessoal, publica conteúdos relacionados a matemática e programação.
+
+author: Rayquaza Boladão
+
+twitter:
+  username: VictorRafaelP12
+  card: summary
+
+social:
+  name: Rayquaza Boladão
+  links:
+    - https://www.instagram.com/rayquaza_boladao
+    - https://facebook.com/rayquazaboladao
+
+google_site_verification: EhLlP5eAqwGihX9DZRwGECFJrUmv2NwhxN_EXh8po9w
+
+locale: pt_BR
+
 disqus:
   shortname: rayquazaboladao
   
