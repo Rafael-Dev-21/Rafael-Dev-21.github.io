@@ -48,3 +48,8 @@ ul.posts {
 ul.posts li {
   list-style: none;
 }
+
+a:focus, button:focus, h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+  outline: 2px solid maroon;
+  box-shadow: 5px 4px 3px 1px black;
+}

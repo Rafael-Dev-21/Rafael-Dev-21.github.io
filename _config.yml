@@ -10,6 +10,7 @@ plugins:
   - jekyll-feed
   - jekyll-netlify
   - jekyll-admin
+  - jekyll-seo-tag
   
 collections:
   jogos:
