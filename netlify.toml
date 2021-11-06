@@ -1,5 +1,12 @@
 [[redirects]]
-  from = "https://rafael-dev-21.netlify.app/notas/*"
-  to = "https://publish.obsidian.md/serve?url=rafael-dev-21.netlify.app/notas/:splat"
+  from = "https://rafael-dev-21.netlify.app/js/*"
+  to = "https://rafael-dev-21.netlify.app/assets/js/*"
   status = 200
   force = true
+  
+[[redirects]]
+  from = "https://rafael-dev-21.netlify.app/css/*"
+  to = "https://rafael-dev-21.netlify.app/assets/css/*"
+  status = 200
+  force = true
+
