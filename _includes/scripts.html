@@ -25,10 +25,10 @@
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-{{ if page.usechemdoodle }}
+{% if page.usechemdoodle %}
 
   <link type="text/css" rel="stylesheet" href="{{ site.url }}/css/ChemDoodleWeb.css"/>
   
   <script type="text/javascript" src="{{ site.url }}/js/lib/ChemDoodleWeb.js"></script>
 
-{{ endif }}
+{% endif %}
