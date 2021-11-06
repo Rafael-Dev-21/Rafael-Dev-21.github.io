@@ -23,6 +23,8 @@ google_site_verification: EhLlP5eAqwGihX9DZRwGECFJrUmv2NwhxN_EXh8po9w
 
 locale: pt_BR
 
+timezone: America/Sao_Paulo
+
 disqus:
   shortname: rayquazaboladao
   
@@ -33,6 +35,7 @@ plugins:
   - jekyll-netlify
   - jekyll-admin
   - jekyll-seo-tag
+  - jekyll-sitemap
   
 collections:
   jogos:

@@ -22,9 +22,11 @@
       <script src="../../assets/js/respond.min.js"></script>
 	  <![endif]-->
     
-    {% include analytics.html %}
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
     
-    {% include tag-manager.html %}
+      {% include tag-manager.html %}
+    {% endif %}
     
     <!-- SCRIPTS -->
     {% include scripts.html %}
