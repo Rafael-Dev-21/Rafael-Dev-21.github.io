@@ -82,17 +82,17 @@ a:focus, button:focus, h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focu
 
 .caixa-pequena {
   @include caixa;
-  width: 50% * $window-width;
+  width: calc(50% * $window-width);
 }
 
 .caixa-media {
   @include caixa;
-  width: 70% * $window-width;
+  width: calc(70% * $window-width);
 }
 
 .caixa-grande {
   @include caixa;
-  width: 90% * $window-width;
+  width: calc(90% * $window-width);
 }
 
 .caixa-email {
