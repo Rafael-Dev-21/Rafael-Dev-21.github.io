@@ -4,26 +4,28 @@ title: "Jogo da Cobrinha Refatorado"
 head: snake-head.html
 game: true
 ---
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/snake-refactor/style.css"
 <div id="game-container">
   <div class="SplashScreen">
     <h1>
       Cobra
     </h1>
-    <p>
-      use as setas do teclado ou os botões.
-    </p>
     <h2>
-      Clique Para Começar.
+      use as setas do teclado ou os botões abaixo.
     </h2>
+    <h3>
+      Clique Para Começar.
+    </h3>
     <input class="StartButton" type="button" value="Começar">
   </div>
   <div class="FinishScreen">
     <h1>
       Game Over
     </h1>
-    <p>
+    <h2>
       Sua pontuação foi: <span id="score"></span>
-    </p>
+    </h2>
     <input class="StartButton" type="button" value="Recomeçar">
   </div>
   
@@ -31,19 +33,18 @@ game: true
 </div>
 <div id="controls" style="visibility: visible;">
   <div class="control" id="up"><svg width="70" height="70" xmlns="https://www.w3.org/2000/svg">
-    <path d="M 20 50 L 35 20 L 50 50 Z" fill="blue" stroke="darkblue"></path>
+    <path d="M 20 50 L 35 20 L 50 50 Z" fill="blue" stroke="darkblue" role="img"></path>
   </svg></div>
   <div class="control" id="left"><svg width="70" height="70" xmlns="https://www.w3.org/2000/svg">
-    <path d="M 20 35 L 50 20 L 50 50 Z" fill="blue" stroke="darkblue"></path>
+    <path d="M 20 35 L 50 20 L 50 50 Z" fill="blue" stroke="darkblue" role="img"></path>
   </svg></div>
   <div class="control" id="right"><svg width="70" height="70" xmlns="https://www.w3.org/2000/svg">
-    <path d="M 20 50 L 20 20 L 50 35 Z" fill="blue" stroke="darkblue"></path>
+    <path d="M 20 50 L 20 20 L 50 35 Z" fill="blue" stroke="darkblue" role="img"></path>
   </svg></div>
-  <div class="control" id="down"><svg width="70" height="70" xmlns="https://www.w3.org/2000/svg">
+  <div class="control" id="down"><svg width="70" height="70" xmlns="https://www.w3.org/2000/svg" role="img">
     <path d="M 35 50 L 20 20 L 50 20 Z" fill="blue" stroke="darkblue"></path>
   </svg></div>
 </div>
-<script src="/js/lib/jquery-3.6.0.min.js"></script>
-<script src="/js/lib/howler.min.js"></script>
-<script src="/js/snake-refactor/index.js"></script>
-<noscript>Seu browser parece não suportar scripts ou eles estão desativados. Por favor, ative-os ou adquira um navegador que os suporte.</noscript>
+<script src="/assets/js/lib/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/snake-refactor/index.js"></script>
+<noscript><h1>Seu browser parece não suportar scripts ou eles estão desativados. Por favor, ative-os ou adquira um navegador que os suporte.</h1></noscript>

@@ -2,6 +2,14 @@
 layout: post
 title: "Eu fiz um jogo da cobrinha!"
 date: 2021-10-05
+last_modified_at: 2021-11-07 18:39
+description: "Eu fiz uma implementação do jogo da cobrinha. O jogo da cobrinha é um jogo de computador que se tornou um clássico durante a era da telefonia móvel."
+categories: 
+  jogos
+tags: 
+  - cobrinha
+  - html5
+  - javascript
 comments: true
 ---
 

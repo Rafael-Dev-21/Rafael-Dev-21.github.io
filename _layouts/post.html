@@ -8,6 +8,8 @@ comments: true
   <article itemscope itemtype="http://schema.org/BlogPosting">{{ content }}</article>
 </div>
 
+<p class="meta"><em>{{ page.last_modified_at | date_to_string }}</em></p>
+
 {% if page.comments %}
 <div class="comments">
   {% include disqus.html %}

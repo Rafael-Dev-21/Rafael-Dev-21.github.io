@@ -21,7 +21,7 @@ nav ul li, footer ul li {
 }
 a {
   text-decoration: none;
-  color: #999;
+  color: forestgreen;
 }
 a:hover {
   text-decoration: underline;
@@ -52,4 +52,19 @@ ul.posts li {
 a:focus, button:focus, h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
   outline: 2px solid maroon;
   box-shadow: 5px 4px 3px 1px black;
+}
+
+.caixa {
+  border: 1px solid darkslategray;
+  padding: 5px;
+  margin: 10px auto;
+  box-shadow: 2px 2px 3px 2px darkred;
+}
+
+.caixa p {
+  color: blueviolet;
+}
+
+.caixa button {
+  background-color: floralwhite;
 }

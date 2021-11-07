@@ -2,6 +2,15 @@
 layout: post
 title: "Lançado site Rafael Dev 21!"
 date: 2021-10-02
+last_modified_at: 2021-11-07 18:36
+description: "Uma pequena nota sobre a criação deste blog. Este blog foi feito com um gerador de sites estáticos chamado Jekyll, que utiliza arquivos markdown para os posts."
+categories: 
+  rafael-dev-21
+tags:
+  - começo
+  - início
+  - jekyll
+  - markdown
 comments: true
 ---
 

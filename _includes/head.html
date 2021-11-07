@@ -1,15 +1,12 @@
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ page.description }}">
-    <meta name="author" content="Rayquaza Boladão">
+    <title>{{ page.title }}</title>
+    {% feed_meta %}
     {% seo %}
-    {% include search-console.html %}
-    <title>{{ page.title }} | Rayquaza Boladão</title>
     
     <!-- link do estilo -->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/print.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css">
     
     {% if page.head %}
     
@@ -30,4 +27,3 @@
     
     <!-- SCRIPTS -->
     {% include scripts.html %}
-</head>
