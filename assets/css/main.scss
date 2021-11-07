@@ -1,3 +1,10 @@
+$window-width: get-vw(72px);
+
+@function get-vw($target) {
+  $vw-context: (1000*.01) * 1px;
+  @return ($target/$vw-context) / 1vw;
+}
+
 body {
   margin: 60px auto;
   width: 70%;
@@ -9,16 +16,21 @@ body {
   border: solid 5px gray;
 }
 
-nav ul, footer ul {
-  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-  padding: 0px;
-  list-style: none;
-  font-weight: bold;
-  margin-right: 20px;
+nav, footer {
+  ul {
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  li {
+    display: inline;
+  }
 }
-nav ul li, footer ul li {
-  display: inline;
-}
+
+
 a {
   text-decoration: none;
   color: forestgreen;
@@ -54,17 +66,39 @@ a:focus, button:focus, h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focu
   box-shadow: 5px 4px 3px 1px black;
 }
 
-.caixa {
+@mixin caixa {
   border: 1px solid darkslategray;
   padding: 5px;
   margin: 10px auto;
   box-shadow: 2px 2px 3px 2px darkred;
 }
 
-.caixa p {
-  color: blueviolet;
+.caixa {
+  @include caixa;
 }
 
-.caixa button {
-  background-color: floralwhite;
+.caixa-pequena {
+  @include caixa;
+  width: 50% * $window-width;
+}
+
+.caixa-media {
+  @include caixa;
+  width: 70% * $window-width;
+}
+
+.caixa-grande {
+  @include caixa;
+  width: 90% * $window-width;
+}
+
+.caixa-email {
+  @include caixa;
+  p {
+    color: blueviolet;
+  }
+  
+  button {
+    background-color: floralwhite;
+  }
 }
