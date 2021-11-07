@@ -1,12 +1,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     {% feed_meta %}
     {% seo %}
     
     <!-- link do estilo -->
-    <link rel="stylesheet" type="text/sass" href="/assets/css/main.scss">
-    <link rel="stylesheet" type="text/sass" href="/assets/css/print.scss">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}">
     
     {% if page.head %}
     
