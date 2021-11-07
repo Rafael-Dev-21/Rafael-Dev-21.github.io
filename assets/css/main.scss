@@ -1,6 +1,8 @@
 ---
 ---
 
+@use "sass::math";
+
 $window-width: get-vw(72px);
 
 @function get-vw($target) {
@@ -82,17 +84,17 @@ a:focus, button:focus, h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focu
 
 .caixa-pequena {
   @include caixa;
-  width: calc(50% * $window-width);
+  width: $window-width * 50%;
 }
 
 .caixa-media {
   @include caixa;
-  width: calc(70% * $window-width);
+  width: $window-width * 70%;
 }
 
 .caixa-grande {
   @include caixa;
-  width: calc(90% * $window-width);
+  width: $window-width * 90%;
 }
 
 .caixa-email {
