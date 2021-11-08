@@ -30,7 +30,7 @@ timezone: America/Sao_Paulo
 disqus:
   shortname: rayquazaboladao
   
-baseurl: /Rafael-Dev-21.netlify.app
+url: "https://rafael-dev-21.netlify.app"
 
 collections:
   jogos:
@@ -43,6 +43,8 @@ plugins:
   - jekyll-admin
   - jekyll-seo-tag
   - jekyll-sitemap
+
+
 
 jekyll_admin:
   hidden_links:
