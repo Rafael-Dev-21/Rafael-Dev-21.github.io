@@ -1,13 +1,6 @@
 ---
 ---
 
-$window-width: get-vw(72px);
-
-@function get-vw($target) {
-  $vw-context: (1000*.01) * 1px;
-  @return ($target/$vw-context) / 1vw;
-}
-
 body {
   margin: 60px auto;
   width: 70%;
@@ -83,26 +76,21 @@ a, button, h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   margin: 10px auto;
   box-shadow: 2px 2px 3px 2px darkred;
-  
-  #text {
-    text-align: center;
-    margin: 10px auto 5px;
-  }
 }
 
 .caixa-pequena {
   @extend .caixa;
-  width: calc(#{#{$window-width}} * 50%);
+  width: 58vw;
 }
 
 .caixa-media {
   @extend .caixa;
-  width: calc(#{$window-width} * 70%);
+  width: 78vw;
 }
 
 .caixa-grande {
   @extend .caixa;
-  width: calc(#{$window-width} * 90%);
+  width: 98vw;
 }
 
 .caixa-email {

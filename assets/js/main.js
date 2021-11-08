@@ -7,7 +7,7 @@ $(window).onready(function() {
       
       tl.to("#logo", {
         duration: .4,
-        scale: 2,
+        scale: 1.2,
         repeat: 3,
         repeatDelay: .4,
         yoyo: true,
