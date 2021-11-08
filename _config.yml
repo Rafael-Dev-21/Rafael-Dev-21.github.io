@@ -30,6 +30,11 @@ disqus:
   
 url: "https://rafael-dev-21.netlify.app"
 
+collections:
+  jogos:
+    - output: true
+    - title: true
+
 plugins:
   - jekyll-feed
   - jekyll-netlify
