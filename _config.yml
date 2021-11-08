@@ -29,6 +29,8 @@ timezone: America/Sao_Paulo
 
 disqus:
   shortname: rayquazaboladao
+  
+baseurl: /Rafael-Dev-21.netlify.app
 
 collections:
   jogos:
