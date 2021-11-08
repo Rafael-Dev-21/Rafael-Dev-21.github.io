@@ -19,7 +19,9 @@ social:
     - https://www.instagram.com/rayquaza_boladao
     - https://facebook.com/rayquazaboladao
 
-google_site_verification: EhLlP5eAqwGihX9DZRwGECFJrUmv2NwhxN_EXh8po9w
+webmaster_verifications: 
+  google: EhLlP5eAqwGihX9DZRwGECFJrUmv2NwhxN_EXh8po9w
+  yandex: a57a227880c335a9
 
 locale: pt_BR
 
@@ -29,6 +31,11 @@ disqus:
   shortname: rayquazaboladao
   
 url: "https://rafael-dev-21.netlify.app"
+
+collections:
+  jogos:
+    output: true
+    permalink: /:collection/:title
 
 plugins:
   - jekyll-feed
