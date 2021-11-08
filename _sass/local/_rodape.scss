@@ -1,0 +1,20 @@
+.rodape {
+  width: 100%;
+  max-width: columns(6);
+  margin: units(2) auto;
+  background-color: $black;
+  
+  p {
+    @include font-size(0);
+    color: $white;
+    
+    @include breakpoint(small) {
+      @include font-size(0, small);
+    }
+  }
+  
+  @include breakpoint(small) {
+    padding: 0 units(1, small);
+    margin: units(2, small) auto;
+  }
+}

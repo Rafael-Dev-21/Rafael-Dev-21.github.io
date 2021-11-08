@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
   {% include head.html %}
@@ -9,15 +9,15 @@
 
   {% include header.html %}
   
-  <div class="container">
+  <section class="conteudo">
   
   {{ content }}
   
-  </div><!-- .container -->
+  </section><!-- .container -->
   
   {% include footer.html %}
   
-  <script>
+  <script async>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -28,8 +28,6 @@
     });
   }
 </script>
-
-<p><a href="https://feedburner.google.com" target="_blank" rel="nofollow noopener"><img src="https://feedburner.google.com/fb/images/pub/powered_by_fb.gif" alt="Powered by FeedBurner" style="border:0"/></a></p>
 
 </body>
 

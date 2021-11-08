@@ -4,6 +4,7 @@ gem "jekyll"
 gem "kramdown"
 gem "kramdown-parser-gfm"
 gem "github-pages"
+gem "compass"
 
 group :jekyll_plugins do
   gem "jekyll-feed"

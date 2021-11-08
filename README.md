@@ -3,5 +3,3 @@
 # Rafael-Dev-21.netlify.app
 
 Website pessoal para blog e jogos.
-
-<p><a href="https://feedburner.google.com" target="_blank" rel="nofollow noopener"><img src="https://feedburner.google.com/fb/images/pub/powered_by_fb.gif" alt="Powered by FeedBurner" style="border:0"/></a></p>

@@ -1,0 +1,23 @@
+@mixin default-font($weight) {
+  font-family: "Times New Roman", "Roman", serif;
+  font-style: normal;
+  
+  @if $weight == regular {
+    font-weight: 300;
+  } @else if $weight == bold {
+    font-weight: 800;
+  }
+}
+
+@mixin code-font {
+  font-family: "Courier New", "Courier", monospace;
+}
+
+body {
+  @include default-font(regular);
+  font-size: font-scale(0);
+}
+
+code {
+  @include code-font();
+}
