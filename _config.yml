@@ -34,8 +34,8 @@ url: "https://rafael-dev-21.netlify.app"
 
 collections:
   jogos:
-    - output: true
-    - permalink: /:collection/:title
+    output: true
+    permalink: /:collection/:title
 
 plugins:
   - jekyll-feed
