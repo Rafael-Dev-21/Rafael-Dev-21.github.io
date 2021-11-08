@@ -21,7 +21,13 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
-<script async src="{{ '/assets/js/lib/jquery-3.6.0.min.js' | relative_url }}"></script>
+{% if page.ajax %}
+  <script async src="{{ '/assets/js/lib/jquery-3.6.0.min.js' | relative_url }}"></script>
+{% endif %}
+
+{% if page.greensock %}
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+{% endif %}
 
 <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -32,3 +38,5 @@
   <script async type="text/javascript" src="{{ /assets/js/lib/ChemDoodleWeb.js | relative_url }}"></script>
 
 {% endif %}
+
+<script defer src="/assets/js/main.js"></script>

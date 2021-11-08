@@ -1,8 +1,6 @@
 ---
 ---
 
-@use "sass::math";
-
 $window-width: get-vw(72px);
 
 @function get-vw($target) {
@@ -85,6 +83,11 @@ a, button, h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   margin: 10px auto;
   box-shadow: 2px 2px 3px 2px darkred;
+  
+  #text {
+    text-align: center;
+    margin: 10px auto 5px;
+  }
 }
 
 .caixa-pequena {
