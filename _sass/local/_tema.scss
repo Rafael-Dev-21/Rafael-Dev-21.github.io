@@ -1,12 +1,15 @@
 .tema-escuro {
   background-color: $black;
-  color: $white;
   
-  >.titulo, >.conteudo>h1 {
+  * {
+    color: $white;
+  }
+  
+  .cabecalho .titulo, .conteudo>h1 {
     color: lighten($green, 30%);
   }
   
-  >a {
+  > a {
     color: lighten($red, 30%);
   }
 }
