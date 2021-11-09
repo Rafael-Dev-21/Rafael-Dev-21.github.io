@@ -4,19 +4,23 @@ title: Me Mande Um E-Mail
 ---
 <h1>{{ page.title }}</h1>
 <form name="mailme" data-netlify="true" method="POST">
-  <p>
-    <label>Seu Nome: <input type="text" name="nome" placeholder="entre seu nome"/></label>
+  <p class="form-group">
+    <label for="text-name">Seu Nome</label>
+    <input type="text" name="nome" class="form-control" id="text-name" placeholder="entre seu nome"/>
   </p>
-  <p>
-    <label>Seu Email: <input type="email" name="email" placeholder="voce@example.com"/></label>
+  <p class="form-group">
+    <label for="email-email">Seu Email</label>
+    <input type="email" name="email" class="form-control" id="email-email" aria-describedby="emailHelp" placeholder="voce@example.com"/>
+    <small id="emailHelp" class="form-text text-muted">Eu nunca compartilharei seu email com alguém!</small>
   </p>
-  <p>
-    <label>Mensagem: <textarea name="mensagem" placeholder="sua mensagem"></textarea></label>
+  <p class="form-group">
+    <label for="area-message">Mensagem</label>
+    <textarea name="mensagem" placeholder="sua mensagem" class="form-control" id="area-message" rows="4"></textarea>
   </p>
-  <p>
-    <button type="submit">Enviar</button>
+  <p class="form-group">
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </p>
-  <p>
-    <strong lang="en"><em>Powered by <a target="_blank" rel="noopener nofollow" href="https://netlify.com">Netlify</a></em></strong>
+  <p class="form-text" lang="en">
+    <strong><em>Powered by <a target="_blank" rel="noopener nofollow" href="https://netlify.com">Netlify</a></em></strong>
   </p>
 </form>
