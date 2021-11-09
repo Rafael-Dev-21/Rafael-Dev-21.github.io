@@ -2,7 +2,7 @@
   background-color: $black;
   color: $white;
   
-  &>.texto-estilizavel {
+  &>.form-text {
     color: $white;
   }
   
@@ -10,7 +10,7 @@
     color: lighten($green, 30%);
   }
   
-  &> a {
+  &>a {
     color: lighten($red, 30%);
   }
 }
