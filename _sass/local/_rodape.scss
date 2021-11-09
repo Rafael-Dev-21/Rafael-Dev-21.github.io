@@ -1,0 +1,24 @@
+.rodape {
+  width: 100%;
+  max-width: columns(6);
+  margin: units(2) auto;
+  background-color: $foreground;
+  
+  p {
+    @include font-size(0);
+    color: $background;
+    
+    @include breakpoint(small) {
+      @include font-size(0, small);
+    }
+  }
+  
+  a {
+    color: $footer-detail;
+  }
+  
+  @include breakpoint(small) {
+    padding: 0 units(1, small);
+    margin: units(2, small) auto;
+  }
+}

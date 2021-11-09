@@ -44,6 +44,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+
+
 jekyll_admin:
   hidden_links:
     - posts

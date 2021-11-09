@@ -1,0 +1,26 @@
+---
+layout: default
+title: Me Mande Um E-Mail
+---
+<h1>{{ page.title }}</h1>
+<form name="mailme" data-netlify="true" method="POST">
+  <p class="form-group">
+    <label for="text-name">Seu Nome</label>
+    <input type="text" name="nome" class="form-control" id="text-name" placeholder="entre seu nome"/>
+  </p>
+  <p class="form-group">
+    <label for="email-email">Seu Email</label>
+    <input type="email" name="email" class="form-control" id="email-email" aria-describedby="emailHelp" placeholder="voce@example.com"/>
+    <small id="emailHelp" class="form-text text-muted">Eu nunca compartilharei seu email com alguém!</small>
+  </p>
+  <p class="form-group">
+    <label for="area-message">Mensagem</label>
+    <textarea name="mensagem" placeholder="sua mensagem" class="form-control" id="area-message" rows="4"></textarea>
+  </p>
+  <p class="form-group">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </p>
+  <p class="form-text" lang="en">
+    <strong><em>Powered by <a target="_blank" rel="noopener nofollow" href="https://netlify.com">Netlify</a></em></strong>
+  </p>
+</form>

@@ -1,0 +1,40 @@
+.cabecalho {
+  margin: units(2) auto;
+  text-align: center;
+  background-color: $primary;
+  
+  .titulo,
+  .logo {
+    display: inline-block;
+    height: units(6);
+    vertical-align: top;
+    
+    @include breakpoint(small) {
+      height: columns(1, small);
+    }
+  }
+  
+  .titulo {
+    font-size: font-scale(3);
+    line-height: units(6);
+    margin: 0;
+    color: $secondary;
+    
+    @include breakpoint(small) {
+      font-size: font-scale(3, small);
+      line-height: columns(1, small);
+    }
+  }
+  
+  .logo {
+    margin-right: units(1);
+    
+    @include breakpoint(small) {
+      margin-right: units(.5, small);
+    }
+  }
+  
+  @include breakpoint(small) {
+    margin: units(2, small) auto;
+  }
+}
