@@ -4,6 +4,7 @@ gem 'jekyll'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
 gem 'github-pages'
+gem 'autoprefixer-rails', ">=10.2.5.1"
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
