@@ -1,5 +1,8 @@
 ---
 ---
-$ ->
-  $(window).bind "load", ->
-    $.webshim.polyfill()
+
+$(() ->
+  $(window).bind ('load', () ->
+    $.webshim.polyfill
+  )
+)
