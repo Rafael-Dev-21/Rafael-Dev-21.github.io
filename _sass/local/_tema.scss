@@ -1,7 +1,8 @@
 .tema-escuro {
   background-color: $black;
+  color: $white;
   
-  *, .texto-estilizavel {
+  .texto-estilizavel {
     color: $white;
   }
   
