@@ -1,7 +1,5 @@
 <nav class="navegacao">
-  <a href="/">início</a>
-  <a href="/blog">blog</a>
-  <a href="/sobre">sobre</a>
-  <a href="/jogos">jogos</a>
-  <a href="/mailme">correio</a>
+  {% for item in site.data.navbar %}
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  {% endfor %}
 </nav>
