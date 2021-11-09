@@ -2,8 +2,8 @@
   background-color: $black;
   color: $white;
   
-  .conteudo>.form-text {
-    color: $white;
+  &>.form-text {
+    color: $white !important;
   }
   
   .cabecalho .titulo, .conteudo>h1 {
