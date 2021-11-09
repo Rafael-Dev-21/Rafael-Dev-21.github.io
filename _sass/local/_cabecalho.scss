@@ -18,7 +18,7 @@
     font-size: font-scale(3);
     line-height: units(6);
     margin: 0;
-    color: $secundary;
+    color: $secondary;
     
     @include breakpoint(small) {
       font-size: font-scale(3, small);
