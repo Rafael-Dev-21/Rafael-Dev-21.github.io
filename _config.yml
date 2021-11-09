@@ -32,6 +32,10 @@ disqus:
   
 url: "https://rafael-dev-21.netlify.app"
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 collections:
   jogos:
     output: true
@@ -43,6 +47,8 @@ plugins:
   - jekyll-admin
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-coffeescript
+  - jekyll-autoprefixer
 
 
 

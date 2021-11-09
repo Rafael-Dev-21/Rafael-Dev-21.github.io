@@ -4,8 +4,6 @@ gem 'jekyll'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
 gem 'github-pages'
-gem 'compass'
-gem 'bootstrap-sass'
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
@@ -13,4 +11,6 @@ group :jekyll_plugins do
   gem 'jekyll-admin'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
+  gem 'jekyll-coffeescript'
+  gem 'jekyll-autoprefixer'
 end
