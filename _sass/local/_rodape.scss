@@ -2,11 +2,11 @@
   width: 100%;
   max-width: columns(6);
   margin: units(2) auto;
-  background-color: $foreground;
+  background-color: $black;
   
   p {
     @include font-size(0);
-    color: $background;
+    color: $white;
     
     @include breakpoint(small) {
       @include font-size(0, small);
@@ -14,7 +14,7 @@
   }
   
   a {
-    color: $footer-detail;
+    color: $pink;
   }
   
   @include breakpoint(small) {

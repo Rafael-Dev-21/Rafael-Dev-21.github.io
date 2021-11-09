@@ -1,7 +1,6 @@
 .cabecalho {
   margin: units(2) auto;
   text-align: center;
-  background-color: $primary;
   
   .titulo,
   .logo {
@@ -18,7 +17,7 @@
     font-size: font-scale(3);
     line-height: units(6);
     margin: 0;
-    color: $secondary;
+    color: $green;
     
     @include breakpoint(small) {
       font-size: font-scale(3, small);
