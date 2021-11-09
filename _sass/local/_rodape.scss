@@ -2,19 +2,13 @@
   width: 100%;
   max-width: columns(6);
   margin: units(2) auto;
-  background-color: $black;
   
   p {
     @include font-size(0);
-    color: $white;
     
     @include breakpoint(small) {
       @include font-size(0, small);
     }
-  }
-  
-  a {
-    color: $pink;
   }
   
   @include breakpoint(small) {
