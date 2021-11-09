@@ -2,7 +2,7 @@
   background-color: $black;
   color: $white;
   
-  >h1 {
+  >.titulo, >.conteudo>h1 {
     color: lighten($green, 30%);
   }
   
