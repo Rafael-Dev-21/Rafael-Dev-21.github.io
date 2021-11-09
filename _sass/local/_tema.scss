@@ -2,7 +2,7 @@
   background-color: $black;
   color: $white;
   
-  &>.form-text {
+  .conteudo>.form-text {
     color: $white;
   }
   
@@ -10,7 +10,7 @@
     color: lighten($green, 30%);
   }
   
-  &>a {
+  .conteudo>a {
     color: lighten($red, 30%);
   }
 }
