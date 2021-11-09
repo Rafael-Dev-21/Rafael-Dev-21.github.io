@@ -1,0 +1,12 @@
+.tema-escuro {
+  background-color: $black;
+  color: $white;
+  
+  >h1 {
+    color: lighten($green, 30%);
+  }
+  
+  >a {
+    color: lighten($red, 30%);
+  }
+}
