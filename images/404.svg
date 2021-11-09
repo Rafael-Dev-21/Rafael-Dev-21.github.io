@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="150" height="150">
+  <path d="M145 150 Q75 75 145 0 L150 0 Q75 75 150 150 Z" strokeWidth="10"></path>
+  <circle cx="50" cy="50" r="5"></circle>
+  <circle cx="50" cy="100" r="5"></circle>
+</svg>
