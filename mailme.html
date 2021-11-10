@@ -3,10 +3,15 @@ layout: default
 title: Me Mande Um E-Mail
 ---
 <h1>{{ page.title }}</h1>
-<form name="mailme" data-netlify="true" method="POST">
+<form 
+  name="mailme"
+  method="POST"
+  action="/thanks"
+  data-netlify="true"
+  data-netlify-recaptcha="true"
+  id="form-contato">
   <p class="form-group">
-    <label for="text-name">Seu Nome</label>
-    <input type="text" name="nome" class="form-control" id="text-name" placeholder="entre seu nome"/>
+    <label for="text-name">Seu Nome: <input type="text" name="nome" class="form-control" id="text-name" placeholder="entre seu nome"/></label>
   </p>
   <p class="form-group">
     <label for="email-email">Seu Email</label>
@@ -15,8 +20,9 @@ title: Me Mande Um E-Mail
   </p>
   <p class="form-group">
     <label for="area-message">Mensagem</label>
-    <textarea name="mensagem" placeholder="sua mensagem" class="form-control" id="area-message" rows="4"></textarea>
+    <textarea name="mensagem" placeholder="sua mensagem" class="form-control" id="area-message" rows="7"></textarea>
   </p>
+  <div data-netlify-recaptcha="true" class="form-group"></div>
   <p class="form-group">
     <button type="submit" class="btn btn-primary botao">Enviar</button>
   </p>
