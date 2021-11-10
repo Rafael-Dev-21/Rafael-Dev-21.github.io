@@ -7,7 +7,7 @@ $(window).on 'load', ->
   tema = (Store.get 'tema') or 'claro'
   
   $('#muda-tema').on 'click', ->
-    setTema(outroTema tema)
+    setTema outroTema tema
 
 
 window.Store: (->
