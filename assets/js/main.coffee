@@ -7,5 +7,8 @@ $ ->
 
 
 $('#muda-tema').on 'click', ->
-  $('body').toggleClass '.tema-claro .tema-escuro'
-  $(this).text $('body').is '.tema-escuro' ? 'tema escuro' : 'tema claro'
+  $('body').toggleClass 'tema-claro tema-escuro'
+  if $('body').is '.tema-escuro'
+    $(this).text 'tema escuro'
+  else
+    $(this).text 'tema claro'
