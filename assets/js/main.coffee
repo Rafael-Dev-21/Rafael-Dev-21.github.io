@@ -58,3 +58,5 @@ setTema: (tema ->
   $('#muda-tema').text "tema #{tema}"
   Store.set 'tema', tema
 )
+
+#
