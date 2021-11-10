@@ -1,13 +1,19 @@
 @mixin default-font($weight) {
-  font-family: "Times New Roman", "Roman", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", serif, sans-serif;
+  font-family: "Times New Roman", "Roman", serif;
   font-style: normal;
-
+  text-align: justify;
+  
   @if $weight==regular {
     font-weight: 300;
   }
 
   @else if $weight==bold {
     font-weight: 800;
+  }
+  
+  &:lang(ja), &.jap {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    word-break: break-all;
   }
 }
 
@@ -31,5 +37,5 @@ body {
 }
 
 code {
-  @include code-font();
+  @include code-font;
 }
