@@ -3,15 +3,10 @@
 
 $(window).on 'load', ->
   $.webshim.polyfill()
-
-window.toggleTheme = ->
-  if $('body').hasClass 'tema-claro'
-    $('body')
-      .removeClass 'tema-claro'
-      .addClass 'tema-escuro'
-    $(this).text 'tema escuro'
-  else
-    $('body')
-      .removeClass 'tema-escuro'
-      .addClass 'tema-claro'
-    $(this).text 'tema claro'
+  
+  $('#muda-tema').on 'click', ->
+    $('body').toggleClass 'tema-claro tema-escuro'
+    if $('body').is 'tema-claro'
+      $(this).text = 'Tema Claro'
+    else
+      $(this).text = 'Tema Escuro'
