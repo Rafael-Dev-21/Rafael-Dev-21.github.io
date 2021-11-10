@@ -31,8 +31,6 @@
 
 <script async src="/assets/js/main.js"></script>
 
-{% endif %}
-
 {% if page.custom_js %}
   {% for js_file in page.custom_js %}
     <script async src="{{ js_file }}"></script>
@@ -49,3 +47,5 @@
   
   <script async type="text/javascript" src="/assets/js/
   /lib/ChemDoodleWeb.js"></script>
+  
+{% endif %}
