@@ -12,5 +12,7 @@ $ ->
       $('body').addClass 'tema-escuro'
       this.text 'tema escuro'
     else
-      $('body').removeClasa 'tema-escuro'
+      $('body').removeClass 'tema-escuro'
       this.text 'tema claro'
+    
+    claro = !claro
