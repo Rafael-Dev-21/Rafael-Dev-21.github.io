@@ -4,37 +4,45 @@
 $(window).on 'load', ->
   $.webshim.polyfill()
   
-  tema = 'claro'
-
-  if storageAvailable 'localStorage'
-    tema = localStorage.getItem 'tema' or tema
+  tema = (Store.get 'tema') or 'claro'
   
   $('#muda-tema').on 'click', ->
-    setTema outroTema tema
+    setTema(outroTema tema)
 
 
-storageAvailable = (type) ->
-  storage = null
-    try
-      storage = window[type]
-      x = '__storage_test__'
-      storage.setItem x, x
-      storage.removeItem x
-      true
-    
-    catch e
-      e instanceof DOMException and (
-        # everything except Firefox
-        e.code === 22 or
-        # Firefox
-        e.code === 1014 or
-        # test name field too, because code might not be present
-        # everything except Firefox
-        e.name === 'QuotaExceededError' or
-        # Firefox
-        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') and
-        # acknowledge QuotaExceededError only if there's something already stored
-        (storage and storage.length !== 0);
+window.Store: (->
+  localStorageSupported: localStorage?
+
+  createCookie: (name, value, days) ->
+    if days
+      date: new Date
+      date.setTime(date.getTime() + (days*24*60*60*1000))
+      expires: "; expires=" + date.toGMTString()
+    else
+      expires: ""
+    document.cookie: name + "=" + value + expires + "; path=/"
+
+  getCookie: (key) ->
+    key: key + "="
+    for c in document.cookie.split(';')
+      c.substring(1, c.length) while c.charAt(0) is ' '
+      return c.substring(key.length, c.length) if c.indexOf(key) == 0
+    return null
+
+  if localStorageSupported
+    {
+      set: (key) -> localStorage[key]: value
+      get: (key) -> localStorage[key]
+      expire: (key) -> localStorage.removeItem(key)
+    }
+  else
+    {
+      set: (key, value) -> createCookie(key, value, 1)
+      get: getCookie
+      expire: (key) -> createCookie(key, "", -1)
+    }
+)
+
 
 outroTema = tema ->
   tema === 'claro' ? 'escuro' : 'claro'
@@ -43,5 +51,4 @@ setTema = tema ->
   $('body').addClass "tema-#{tema}"
   $('body').removeClass "tema-#{outroTema tema}"
   $('#muda-tema').text "tema #{tema}"
-  if storageAvailable 'localStorage'
-    localStorage.setItem 'tema', tema
+  Store.set 'tema', tema
