@@ -45,7 +45,7 @@ window.Store: (->
 
 
 outroTema = tema ->
-  tema === 'claro' ? 'escuro' : 'claro'
+  if tema === 'claro' then 'escuro' else 'claro'
 
 setTema = tema ->
   $('body').addClass "tema-#{tema}"
