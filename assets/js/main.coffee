@@ -10,9 +10,9 @@ $ ->
   $('#muda-tema').on 'click', ->
     if claro 
       $('body').addClass 'tema-escuro'
-      this.text 'tema escuro'
+      $(this).text 'tema escuro'
+      claro = false
     else
       $('body').removeClass 'tema-escuro'
-      this.text 'tema claro'
-    
-    claro = !claro
+      $(this).text 'tema claro'
+      claro = true
