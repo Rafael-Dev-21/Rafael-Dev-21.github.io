@@ -7,7 +7,8 @@ $(window).on 'load', ->
   tema = (Store.get 'tema') or 'claro'
   
   $('#muda-tema').on 'click', ->
-    setTema outroTema tema
+    tema = outroTema tema
+    setTema tema
 
 
 window.Store: (->
@@ -44,11 +45,16 @@ window.Store: (->
 )
 
 
-outroTema = tema ->
-  if tema === 'claro' then 'escuro' else 'claro'
+outroTema: (tema ->
+  if tema === 'claro'
+    'escuro'
+  else 
+    'claro'
+)
 
-setTema = tema ->
+setTema: (tema ->
   $('body').addClass "tema-#{tema}"
   $('body').removeClass "tema-#{outroTema tema}"
   $('#muda-tema').text "tema #{tema}"
   Store.set 'tema', tema
+)
