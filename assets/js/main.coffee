@@ -6,10 +6,17 @@ $(window).on 'load', ->
   
   tema = (Store.get 'tema') or 'claro'
   
+  $('body').addClass "tema-#{tema}"
+  $('#muda-tema').text "Tema #{tema}"
+  
   $('#muda-tema').on 'click', ->
-    tema = outroTema tema
-    setTema tema
-
+    $('body').toggleClass 'tema-claro tema-escuro'
+    if tema == 'claro'
+      tema = 'escuro'
+    else
+      tema = 'claro'
+    $(this).text "Tema #{tema}"
+    Store.set 'tema', tema
 
 window.Store: (->
   localStorageSupported: localStorage?
@@ -32,7 +39,7 @@ window.Store: (->
 
   if localStorageSupported
     {
-      set: (key) -> localStorage[key]: value
+      set: (key, value) -> localStorage[key]: value
       get: (key) -> localStorage[key]
       expire: (key) -> localStorage.removeItem(key)
     }
@@ -43,20 +50,3 @@ window.Store: (->
       expire: (key) -> createCookie(key, "", -1)
     }
 )
-
-
-outroTema: (tema ->
-  if tema === 'claro'
-    'escuro'
-  else 
-    'claro'
-)
-
-setTema: (tema ->
-  $('body').addClass "tema-#{tema}"
-  $('body').removeClass "tema-#{outroTema tema}"
-  $('#muda-tema').text "tema #{tema}"
-  Store.set 'tema', tema
-)
-
-#
