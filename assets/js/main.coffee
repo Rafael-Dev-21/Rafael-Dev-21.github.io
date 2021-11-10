@@ -4,7 +4,7 @@
 $(window).on 'load', ->
   $.webshim.polyfill()
 
-toggleTheme = ->
+window.toggleTheme = ->
   if $('body').hasClass 'tema-claro'
     $('body')
       .removeClass 'tema-claro'
