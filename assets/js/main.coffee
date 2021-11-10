@@ -4,16 +4,21 @@
 $(window).on 'load', ->
   $.webshim.polyfill()
   
-  tema = (Store.get 'tema') or 'claro'
+  tema = getCookie 'tema'
+  
+  tema = if tema? then tema else 'claro'
   
   $('body').addClass "tema-#{tema}"
-  $('#muda-tema').text "Tema #{tema}"
+  setNomeBotaoPorTema $('#muda-tema')
   
   $('#muda-tema').on 'click', ->
     $('body').toggleClass 'tema-claro tema-escuro'
-    if tema == 'claro'
-      tema = 'escuro'
-    else
-      tema = 'claro'
-    $(this).text "Tema #{tema}"
-    Store.set 'tema', tema
+    setNomeBotaoPorTema $(this)
+    setTemaCookie()
+
+setNomeBotaoPorTema = (botao) ->
+  $(botao).text = if $('body').is '.tema-claro' then 'Tema Claro' else 'Tema Escuro'
+
+setTemaCookie = ->
+  tema = if $('body').is '.tema-claro' then 'claro' else 'escuro'
+  createCookie 'tema', tema, null
