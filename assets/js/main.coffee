@@ -17,7 +17,7 @@ $(window).on 'load', ->
     setTemaCookie()
 
 setNomeBotaoPorTema = (botao) ->
-  $(botao).text = if $('body').is '.tema-claro' then 'Tema Claro' else 'Tema Escuro'
+  $(botao).text if $('body').is '.tema-claro' then 'Tema Claro' else 'Tema Escuro'
 
 setTemaCookie = ->
   tema = if $('body').is '.tema-claro' then 'claro' else 'escuro'
