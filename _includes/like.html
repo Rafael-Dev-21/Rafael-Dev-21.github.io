@@ -8,7 +8,7 @@
     }
     
     fetchLikes() {
-      const { data } = fetch('/.netlify/functions/fetch_likes_for_blog').then((res) => {
+      const { data } = fetch('/.netlify/functions/fetch_likes_for_blog?slug={{ page.slug }}').then((res) => {
         return res.json();
       });
       
@@ -34,11 +34,11 @@
     }
   }
   
-  const likes = new LikeManager();
+  const likeManager = new LikeManager();
   
-  const update = function() {
-    likes.fetchLikes();
-    likes.addLike();
+  document.getElementById("like_button").addEventListener("click", function() {
+    likeManager.fetchLikes();
+    likeManager.addLike();
     document.querySelector('#likes').innerHTML = likes.likes;
-  }
+  });
 </script>
