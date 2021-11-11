@@ -21,18 +21,18 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
-<script defer src="/assets/js/jquery-3.6.0.min.js"></script>
-<script defer src="/assets/js/modernizr.custom.min.js"></script>
-<script defer src="/assets/js/polyfiller.js"></script>
+<script async src="/assets/js/jquery-3.6.0.min.js"></script>
+<script async src="/assets/js/modernizr.custom.min.js"></script>
+<script async src="/assets/js/polyfiller.js"></script>
 
-<script defer src="/assets/js/bootstrap.bundle.js"></script>
+<script async src="/assets/js/bootstrap.bundle.js"></script>
 
-<script defer src="/assets/js/cookie.js"></script>
+<script async src="/assets/js/cookie.js"></script>
 
-<script defer src="/assets/js/main.js"></script>
+<script async src="/assets/js/main.js"></script>
 
 {% if page.custom_js %}
   {% for js_file in page.custom_js %}
-    <script defer src="{{ js_file }}"></script>
+    <script async src="{{ js_file }}"></script>
   {% endfor %}
 {% endif %}
