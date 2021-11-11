@@ -9,7 +9,9 @@ title: Me Mande Um E-Mail
   action="/thanks"
   data-netlify="true"
   data-netlify-recaptcha="true"
+  data-netlify-honeypot="bot-field"
   id="form-contato">
+  <input type="hidden" name="form-name" value="mailme"/>
   <p class="form-group">
     <label for="text-name">Seu Nome: <input type="text" name="nome" class="form-control" id="text-name" placeholder="entre seu nome"/></label>
   </p>

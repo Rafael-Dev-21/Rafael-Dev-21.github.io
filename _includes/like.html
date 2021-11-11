@@ -1,0 +1,44 @@
+<button class="btn primary_btn botao" id="like_button" onclick="update();">Likes: <span id="likes">0</span></button>
+<script>
+  class LikeManager {
+    constructor() {
+      this._initialLikes = 0;
+      this._asUserLiked = localStorage.getItem("{{ page.slug }}") === "true" ? true : false;
+      fetchLikes();
+    }
+    
+    fetchLikes() {
+      const { data } = fetch('/.netlify/functions/fetch_likes_for_blog').then((res) => {
+        return res.json();
+      });
+      
+      this._initialLikes = data.likes;
+    }
+    
+    addLike() {
+      if(!this._asUserLiked) {
+        this._initialLikes++;
+        this._incrementLikes();
+        localStorage.setItem("{{ page.slug }}", "true");
+      }
+    }
+    
+    private _incrementLikes() {
+      fetch('/.netlify/functions/register_like?slug={{ page.slug }}', {
+        method: 'POST'
+      })
+    }
+    
+    get likes() {
+      return this._incrementLikes;
+    }
+  }
+  
+  const likes = new LikeManager();
+  
+  const update = function() {
+    likes.fetchLikes();
+    likes.addLike();
+    document.querySelector('#likes').innerHTML = likes.likes;
+  }
+</script>
