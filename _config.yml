@@ -49,7 +49,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-coffeescript
   - jekyll-autoprefixer
-  - jekyll-archive
+  - jekyll-archives
   - jekyll-toc
 
 jekyll-archives:
