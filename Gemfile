@@ -13,4 +13,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-coffeescript'
   gem 'jekyll-autoprefixer', "1.0.1"
+  gem 'jekyll-archives'
+  gem 'jekyll-toc'
 end

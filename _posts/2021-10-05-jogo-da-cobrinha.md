@@ -2,8 +2,8 @@
 layout: post
 title: "Eu fiz um jogo da cobrinha!"
 date: 2021-10-05
-last_modified_at: 2021-11-07 18:39
-description: "Eu fiz uma implementação do jogo da cobrinha. O jogo da cobrinha é um jogo de computador que se tornou um clássico durante a era da telefonia móvel."
+last_modified_at: 2021-11-10 21:42
+description: "Sim, exatamente como diz o título, talvez eu faça um tutorial."
 categories: 
   jogos
 tags: 
