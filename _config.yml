@@ -49,8 +49,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-coffeescript
   - jekyll-autoprefixer
+  - jekyll-archive
+  - jekyll-toc
 
-
+jekyll-archives:
+  enabled: all
+  layouts:
+    year: archive-year
+    month: archive-month
+    day: archive-day
+    category: archive-tag-or-category
+    tag: archive-tag-or-category
 
 jekyll_admin:
   hidden_links:
