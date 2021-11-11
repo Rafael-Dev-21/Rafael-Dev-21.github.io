@@ -1,5 +1,5 @@
 'use strict';
-const octokit = require('@octokit/rest');
+const octokit = require('@octokit/rest')();
 
 
 const username = process.env.REPO_UID;
