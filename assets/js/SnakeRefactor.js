@@ -148,6 +148,10 @@ $(function($) {
       const KEY_DOWN = "38";
       const KEY_LEFT = "39";
       const KEY_UP = "40";
+      const KEY_A = "65";
+      const KEY_S = "83";
+      const KEY_D = "68";
+      const KEY_W = "87";
 
       const goingRight = dx === 10;
       const goingDown = dy === 10;
@@ -156,22 +160,22 @@ $(function($) {
 
       if (changingDirection) return;
       changingDirection = true;
-      if (key == KEY_RIGHT && !goingLeft) {
+      if ((key == KEY_RIGHT || key == KEY_A) && !goingLeft) {
         dx = 10;
         dy = 0;
       }
 
-      if (key == KEY_DOWN && !goingUp) {
+      if ((key == KEY_DOWN || key == KEY_S) && !goingUp) {
         dx = 0;
         dy = 10;
       }
 
-      if (key == KEY_LEFT && !goingRight) {
+      if ((key == KEY_LEFT || key == KEY_D) && !goingRight) {
         dx = -10;
         dy = 0;
       }
 
-      if (key == KEY_UP && !goingDown) {
+      if ((key == KEY_UP || key == KEY_W) && !goingDown) {
         dx = 0;
         dy = -10;
       }
