@@ -11,14 +11,13 @@
   force = true
 
 [[redirects]]
-  from = "/admin"
-  to = "/admin"
-  status = 301
-  force = false
+  from = "/admin/*"
+  status = 200
+  force = true
   conditions = {Role = ["admin"]}
   
 [[redirects]]
-  from = "/admin"
+  from = "/admin/*"
   to = "/"
-  status = 301
+  status = 401
   force = true
