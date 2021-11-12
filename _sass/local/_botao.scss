@@ -4,11 +4,12 @@
   color: $white;
   @include font-size(1);
   padding: units(.5);
-  border-radius: 3ex;
+  border-radius: 1ex;
   
   &:hover, &:focus {
     outline: $black;
     border: $red;
+    background-color: lighten($green, 15%);
   }
   
   @include breakpoint(small) {
