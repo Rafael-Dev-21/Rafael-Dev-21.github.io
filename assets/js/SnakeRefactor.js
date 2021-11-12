@@ -160,7 +160,7 @@ $(function($) {
 
       if (changingDirection) return;
       changingDirection = true;
-      if ((key == KEY_RIGHT || key == KEY_A) && !goingLeft) {
+      if ((key == KEY_RIGHT || key == KEY_D) && !goingLeft) {
         dx = 10;
         dy = 0;
       }
@@ -170,7 +170,7 @@ $(function($) {
         dy = 10;
       }
 
-      if ((key == KEY_LEFT || key == KEY_D) && !goingRight) {
+      if ((key == KEY_LEFT || key == KEY_A) && !goingRight) {
         dx = -10;
         dy = 0;
       }
