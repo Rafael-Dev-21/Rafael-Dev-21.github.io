@@ -21,5 +21,5 @@ setNomeBotaoPorTema = (botao) ->
   $(botao).text if $('body').is '.tema-escuro' then 'Tema Claro' else 'Tema Escuro'
 
 setTemaCookie = ->
-  tema = if $('body').is '.tema-claro' then 'claro' else 'escuro'
+  tema = if $('body').is '.tema-escuro' then 'escuro' else 'claro'
   createCookie 'tema', tema, null

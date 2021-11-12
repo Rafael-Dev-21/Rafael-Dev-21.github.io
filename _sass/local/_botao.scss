@@ -1,4 +1,19 @@
 .botao {
   background-color: $green;
   box-shadow: 1px 1px 0 darken($green, 15%);
+  color: $white;
+  @include font-size(1);
+  padding: units(.5);
+  border-radius: 1ex;
+  
+  &:hover, &:focus {
+    outline: $black;
+    border: $red;
+    background-color: lighten($green, 15%);
+  }
+  
+  @include breakpoint(small) {
+    @include font-size(1, small);
+    padding: units(.5, small);
+  }
 }

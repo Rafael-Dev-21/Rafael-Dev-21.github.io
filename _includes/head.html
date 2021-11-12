@@ -5,10 +5,10 @@
     {% seo %}
     
     <!-- link do estilo -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/manifest.css">
+    <link rel="stylesheet" type="text/css" rel="preload" href="/assets/css/manifest.css">
     {% if page.custom_css %}
       {% for css_file in page.custom_css %}
-        <link rel="stylesheet" type="text/css" href="{{ css_file }}">
+        <link rel="stylesheet" rel="preload" type="text/css" href="{{ css_file }}">
       {% endfor %}
     {% endif %}
     
@@ -22,3 +22,5 @@
     
       {% include tag-manager.html %}
     {% endif %}
+      
+    <script src="/assets/js/jquery-3.6.0.min.js" defer></script>

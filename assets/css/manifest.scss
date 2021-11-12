@@ -4,12 +4,12 @@
 // Dependências
 @import "lib/normalize";
 @import "local/normalizacao";
-@import "lib/bootstrap";
 @import "local/grade";
 @import "local/breakpoint";
 @import "local/paleta";
 @import "local/tipografia";
 @import "local/links";
+@import "local/tamanho";
 
 // Módulos
 @import "local/cabecalho";
@@ -19,3 +19,4 @@
 @import "local/navegacao";
 @import "local/tema";
 @import "local/botao";
+@import "local/formulario"

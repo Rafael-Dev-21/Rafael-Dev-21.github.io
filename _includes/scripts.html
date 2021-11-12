@@ -21,7 +21,6 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
-<script async src="/assets/js/jquery-3.6.0.min.js"></script>
 <script async src="/assets/js/modernizr.custom.min.js"></script>
 <script async src="/assets/js/polyfiller.js"></script>
 
@@ -35,17 +34,4 @@
   {% for js_file in page.custom_js %}
     <script async src="{{ js_file }}"></script>
   {% endfor %}
-{% endif %}
-
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-
-<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-{% if page.usechemdoodle %}
-
-  <link type="text/css" rel="stylesheet" href="/assets/css/ChemDoodleWeb.css"/>
-  
-  <script async type="text/javascript" src="/assets/js/
-  /lib/ChemDoodleWeb.js"></script>
-  
 {% endif %}

@@ -1,12 +1,11 @@
 [[redirects]]
-  from = "https://rafael-dev-21.netlify.app/js/*"
-  to = "https://rafael-dev-21.netlify.app/assets/js/*"
+  from = "/js/*"
+  to = "/assets/js/:splat"
   status = 200
   force = true
   
 [[redirects]]
-  from = "https://rafael-dev-21.netlify.app/css/*"
-  to = "https://rafael-dev-21.netlify.app/assets/css/*"
+  from = "/css/*"
+  to = "/assets/css/:splat"
   status = 200
   force = true
-
