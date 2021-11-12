@@ -3,6 +3,8 @@
   box-shadow: 1px 1px 0 darken($green, 15%);
   color: $white;
   @include font-size(1);
+  padding: units(.5);
+  border-radius: 3ex;
   
   &:hover, &:focus {
     outline: $black;
@@ -11,5 +13,6 @@
   
   @include breakpoint(small) {
     @include font-size(1, small);
+    padding: units(.5, small);
   }
 }
