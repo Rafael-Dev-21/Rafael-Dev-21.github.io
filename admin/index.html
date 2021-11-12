@@ -2,5 +2,19 @@
 layout: default
 title: "ADMIN"
 ---
-
+<h1>ADMIN</h1>
 <div class="login" data-netlify-identity-button></div>
+<form>
+  <label>título</label>
+  <input type="text" name="title"/>
+  <label>data</label>
+  <input type="date" name="date"/>
+  <label>layout</label>
+  <select name="layout">
+    <option>default</option>
+    <option>post</option>
+  </select>
+  <label>conteúdo</label>
+  <textarea name="content"></textarea>
+  <input type="submit"/>
+</form>
