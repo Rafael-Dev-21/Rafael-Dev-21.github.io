@@ -16,6 +16,14 @@ $(window).on 'load', ->
     $('body').toggleClass 'tema-escuro'
     setNomeBotaoPorTema $(this)
     setTemaCookie()
+  
+  $('.tofigure').each ->
+    $(this).replaceWith $('<figure class="img-with-caption tofigure">' + $(this).innerHtml + '</figure>')
+  
+  $('.tofigure').children 'img'
+    .each ->
+      caption = $(this).attr 'title'
+      $(this).after $('<figcaption class="caption">' + caption + '</figcaption>')
 
 setNomeBotaoPorTema = (botao) ->
   $(botao).text if $('body').is '.tema-escuro' then 'Tema Claro' else 'Tema Escuro'
