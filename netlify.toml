@@ -1,11 +1,1 @@
-[[redirects]]
-  from = "/js/*"
-  to = "/assets/js/:splat"
-  status = 200
-  force = true
-  
-[[redirects]]
-  from = "/css/*"
-  to = "/assets/css/:splat"
-  status = 200
-  force = true
+

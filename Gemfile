@@ -15,4 +15,5 @@ group :jekyll_plugins do
   gem 'jekyll-autoprefixer', "1.0.1"
   gem 'jekyll-archives'
   gem 'jekyll-toc'
+  gem 'jekyll-theme-minimal'
 end
