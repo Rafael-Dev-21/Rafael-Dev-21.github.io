@@ -17,18 +17,6 @@
   
   {% include footer.html %}
   
-  <script async>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin";
-        });
-      }
-    });
-  }
-</script>
-
 <!-- SCRIPTS -->
 {% include scripts.html %}
 
