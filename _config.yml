@@ -43,11 +43,9 @@ collections:
 
 plugins:
   - jekyll-feed
-  - jekyll-netlify
   - jekyll-admin
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-coffeescript
   - jekyll-autoprefixer
   - jekyll-archives
   - jekyll-toc
