@@ -14,13 +14,6 @@
   </script>
 {% endif %}
 
-<script async src="/assets/js/modernizr.custom.min.js"></script>
-<script async src="/assets/js/polyfiller.js"></script>
-
-<script async src="/assets/js/cookie.js"></script>
-
-<script async src="/assets/js/main.js"></script>
-
 {% if page.custom_js %}
   {% for js_file in page.custom_js %}
     <script async src="{{ js_file }}"></script>
