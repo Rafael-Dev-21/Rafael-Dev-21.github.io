@@ -9,21 +9,21 @@
 	enable-background="new 0 0 24.0 24.0"
 	xml:space="preserve">
 <defs>
-	<linearGradient id="fillGrad1" x1="0.000%" y1="50.000%" x2="100.000%" y2="50.000%">
+	<linearGradient id="fillGrad0" x1="0.000%" y1="50.000%" x2="100.000%" y2="50.000%">
    		<stop offset="0.000%" style="stop-color:rgb(17,89,0);stop-opacity:1.000" />
 		<stop offset="50.000%" style="stop-color:rgb(0,255,0);stop-opacity:1.000" />
 		<stop offset="100.000%" style="stop-color:rgb(206,255,112);stop-opacity:1.000" />
 	</linearGradient>
 
-<filter id="glow1" x="-200%" y="-200%" width="600%" height="600%" >
-	<feOffset result="offOut" in="SourceGraphic" dx="0.22000001" dy="0.22000001" />
-	<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.11000001" />
+<filter id="glow0" x="-200%" y="-200%" width="600%" height="600%" >
+	<feOffset result="offOut" in="SourceGraphic" dx="0.22" dy="0.22" />
+	<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.11" />
 	<feFlood flood-color="#064E00" flood-opacity="1.000" result="flood"/>
 	<feComposite in="flood" in2="blurOut" operator="in" result="blendOut0"/>
 	<feBlend in="SourceGraphic" in2="blendOut0" mode="normal" />
 </filter>
 
-	<linearGradient id="fillGrad2" x1="50.000%" y1="16.667%" x2="50.000%" y2="90.000%">
+	<linearGradient id="fillGrad1" x1="50.000%" y1="16.667%" x2="50.000%" y2="90.000%">
    		<stop offset="0.000%" style="stop-color:rgb(255,254,100);stop-opacity:1.000" />
 		<stop offset="54.545%" style="stop-color:rgb(172,169,0);stop-opacity:1.000" />
 		<stop offset="100.000%" style="stop-color:rgb(109,115,0);stop-opacity:1.000" />
@@ -37,24 +37,14 @@
 	</style>
 </defs>
 	<path
-		fill="#CCCCCC"
-		stroke="#000000"
-		fill-opacity="1.000"
-		stroke-opacity="1.000"
-		fill-rule="nonzero"
-		stroke-width="0.0"
-		stroke-linejoin="miter"
-		stroke-linecap="square"
-		d="M0.00,0.00L24.00,0.00L24.00,24.00L0.00,24.00z"/>
-	<path
 		transform = "rotate(-0.00 12.00 12.00)"
-		fill="url(#fillGrad1)"
+		fill="url(#fillGrad0)"
 		stroke="#EDFF29"
 		fill-opacity="1.0"
 		stroke-opacity="1.000"
 		fill-rule="nonzero"
 		stroke-width="0.288"
-		filter="url(#glow1)"
+		filter="url(#glow0)"
 		stroke-linejoin="miter"
 		stroke-linecap="square"
 		d="M5.58,1.00L18.42,1.00A4.58 4.58 0 0 1 23.00,5.58L23.00,18.42A4.58 4.58 0 0 1 18.42,23.00L5.58,23.00A4.58 4.58 0 0 1 1.00,18.42L1.00,5.58A4.58 4.58 0 0 1 5.58,1.00z"/>
@@ -67,19 +57,19 @@
 		stroke-opacity="1.000"
 		fill-opacity="0"
 		text-anchor="start"
-  		transform="rotate(-0.0 12.0 12.0) scale(1.3535016 1.0)" >
-		<tspan x="4.0723925" y="17.6255">R</tspan>
+  		transform="rotate(-0.0 12.000002 12.0) scale(1.3535019 1.0)" >
+		<tspan x="4.072392" y="17.6255">R</tspan>
 	</text> 
 
 	<text 
 		font-size="15.0"
 		font-family="openSans"
-		fill="url(#fillGrad2)"
+		fill="url(#fillGrad1)"
 		stroke-width="0"
 		fill-opacity="1.0"
 		text-anchor="start"
-  		transform="rotate(-0.0 12.0 12.0) scale(1.3535016 1.0)" >
+  		transform="rotate(-0.0 12.000002 12.0) scale(1.3535019 1.0)" >
 
-		<tspan x="4.0723925" y="17.6255">R</tspan>
+		<tspan x="4.072392" y="17.6255">R</tspan>
 	</text>
 </svg>
