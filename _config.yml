@@ -30,7 +30,7 @@ timezone: America/Sao_Paulo
 disqus:
   shortname: rayquazaboladao
   
-url: "https://rafael-dev-21.netlify.app"
+url: "https://rafael-dev-21.github.io"
 
 sass:
   sass_dir: _sass
