@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
-<head prefix="og: http://ogp.me/ns#">
-  {% include head.html %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebSite">
-
-  {% include header.html %}
-  
-  <main class="conteudo">
-  
+<body>
+  {% include navbar.html %}
   {{ content }}
-  
-  </main><!-- .conteudo -->
-  
-  {% include footer.html %}
-  
-<!-- SCRIPTS -->
-{% include scripts.html %}
-
 </body>
-
 
 </html>

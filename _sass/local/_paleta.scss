@@ -1,4 +1,11 @@
-$green: #124A12;
-$white: #FDFDFD;
-$black: #000005;
-$red: #EE0111;
+$black: #010112;
+$white: #fefeed;
+$green: #11ee22;
+$red:   #ee2211;
+
+:root {
+  --black: #{$black};
+  --white: #{$white};
+  --green: #{$green};
+  --red:   #{$red};
+}

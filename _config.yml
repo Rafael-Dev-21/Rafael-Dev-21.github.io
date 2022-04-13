@@ -1,72 +1,24 @@
-name: "Rafael Dev 21, O Rayquaza Boladão [[ Arquivo | Legado ]]"
+name: "Rafael Dev 21, O Rayquaza Boladão"
 markdown: kramdown
 
 title: Rafael Dev 21
 
-tagline: Um blog e site dedicado a matemática e programação
+tagline: Meu blog pessoal
 
 description: Este site, criado com o intuito de ser uma página pessoal, publica conteúdos relacionados a matemática e programação.
 
 author: Rayquaza Boladão
 
-twitter:
-  username: VictorRafaelP12
-  card: summary
-
-social:
-  name: Rayquaza Boladão
-  links:
-    - https://www.instagram.com/rayquaza_boladao
-    - https://facebook.com/rayquazaboladao
-
 webmaster_verifications: 
   google: EhLlP5eAqwGihX9DZRwGECFJrUmv2NwhxN_EXh8po9w
   yandex: a57a227880c335a9
 
-locale: pt_BR
+locale: pt-BR
 
 timezone: America/Sao_Paulo
 
-disqus:
-  shortname: rayquazaboladao
-  
 url: "https://rafael-dev-21.github.io"
 
 sass:
   sass_dir: _sass
   style: compressed
-
-collections:
-  jogos:
-    output: true
-    permalink: /:collection/:title
-
-plugins:
-  - jekyll-feed
-  - jekyll-admin
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-autoprefixer
-  - jekyll-archives
-  - jekyll-toc
-
-jekyll-archives:
-  enabled: all
-  layouts:
-    year: archive-year
-    month: archive-month
-    day: archive-day
-    category: archive-tag-or-category
-    tag: archive-tag-or-category
-
-jekyll_admin:
-  hidden_links:
-    - posts
-    - pages
-    - staticfiles
-    - datafiles
-    - configuration
-
-permalink: /blog/:year/:month/:day/:title
-
-theme: jekyll-theme-minimal

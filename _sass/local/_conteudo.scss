@@ -1,89 +1,11 @@
-.conteudo {
-  width: 100%;
-  max-width: columns(7);
-  margin: columns(1) auto;
-  
-  >h1 {
-    @include font-size(3);
-    color: $green;
-    margin: 0;
-    text-align: center;
-    
-    @include breakpoint(small) {
-      @include font-size(3, small);
-    }
-  }
-  
-  .navegacao {
-    margin-top: units(2);
-  }
-  
-  article {
-    &:first-of-type {
-      margin-top: columns(1);
-      
-      @include breakpoint(small) {
-        margin-top: columns(1, small);
-      }
-    }
-    
-    >* {
-      margin-top: units(1);
-      
-      &:first-child {
-        margin-top: 0;
-      }
-      
-      @include breakpoint(small) {
-        margin-top: units(1, small);
-      }
-    }
-    
-    p,
-    li {
-      @include font-size(1);
-      hyphens: auto;
-      text-rendering: optimizeLegibility;
-      
-      @include breakpoint(small) {
-        @include font-size(1, small);
-      }
-    }
-    
-    ul {
-      list-style: disc inside;
-    }
-    
-    ol {
-      list-style: decimal inside;
-    }
-    
-    pre,
-    code {
-      border: 0;
-      -webkit-overflow-scrolling: touch;
-    }
-    
-    code {
-      font-size: font-scale(-1);
-      
-      @include breakpoint(small) {
-        font-size: font-scale(-1, small);
-      }
-    }
-    
-    abbr {
-      border-bottom: 1px dotted currentColor;
-      font-style: italic;
-    }
-  }
-  
-  @include breakpoint(medium) {
-    padding: units(1);
-  }
-  
-  @include breakpoint(small) {
-    padding: units(1, small);
-    margin: columns(1, small) auto;
-  }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }

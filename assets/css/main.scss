@@ -1,105 +1,13 @@
 ---
 ---
 
-body {
-  margin: 60px auto;
-  width: 70%;
-}
+// Dependências
+@import "lib/normalize";
+@import "local/normalizacao";
+@import "local/grade";
+@import "local/breakpoint";
+@import "local/paleta";
+@import "local/tipografia";
 
-.BLOG_video_embed {
-  margin: 60px auto;
-  width: 70%;
-  border: solid 2px gray;
-}
-
-nav, footer {
-  ul {
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    margin-right: 20px;
-  }
-  
-  li {
-    display: inline;
-  }
-}
-
-nav.logo {
-  h1, h2 {
-    display: inline;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: forestgreen;
-  
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-h1 {
-  font-size: 3em;
-  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-  font-size: 1.5em;
-  line-height: 1.4em;
-  color: #333;
-}
-footer {
-  border-top: 1px solid #d5d5d5;
-  font-size: .8em;
-}
-
-ul.posts {
-  margin: 20px auto 40px;
-  font-size: 1.5em;
-  
-  li {
-    list-style: none;
-  }
-}
-
-a, button, h1, h2, h3, h4, h5, h6 {
-  &:focus {
-    outline: 2px solid maroon;
-    box-shadow: 5px 4px 3px 1px black;
-  }
-}
-
-.caixa {
-  border: 1px solid darkslategray;
-  padding: 5px;
-  margin: 10px auto;
-  box-shadow: 2px 2px 3px 2px darkred;
-}
-
-.caixa-pequena {
-  @extend .caixa;
-  width: 58vw;
-}
-
-.caixa-media {
-  @extend .caixa;
-  width: 78vw;
-}
-
-.caixa-grande {
-  @extend .caixa;
-  width: 98vw;
-}
-
-.caixa-email {
-  @extend .caixa;
-  p {
-    color: blueviolet;
-  }
-  
-  button {
-    background-color: floralwhite;
-  }
-}
+// Módulos
+@import "local/conteudo";
