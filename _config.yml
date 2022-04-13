@@ -22,3 +22,6 @@ url: "https://rafael-dev-21.github.io"
 sass:
   sass_dir: _sass
   style: compressed
+
+plugins:
+  - jekyll-autoprefixer

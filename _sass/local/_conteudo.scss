@@ -1,11 +1,33 @@
-header {
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
-body {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+.nav__link {
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  
+  &:hover {
+    animation: beat 500ms ease-in-out infinite;
+  }
+}
+
+@keyframes beat {
+  from {
+    transform: none;
+  }
+  
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  
+  to {
+    transform: none;
+  }
 }
