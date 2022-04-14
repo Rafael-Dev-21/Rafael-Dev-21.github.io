@@ -8,7 +8,7 @@ title: Blog do Rafael Dev 21
   
   {% for post in site.posts %}
     <li class="post">
-      <span class="post__date">{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" class="post__title">{{ post.title }}</a>
+      <span class="post__date">{{ post.date | date_to_string }}</span> » <a href="{{ post.url | relative_url }}" class="post__title">{{ post.title }}</a>
       <blockquote class="post__description"><p><em>{{ post.description }}</em></p></blockquote>
     </li>
   {% endfor %}

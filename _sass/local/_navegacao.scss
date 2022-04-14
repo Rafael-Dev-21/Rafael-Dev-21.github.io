@@ -1,4 +1,4 @@
-.nav {
+#nav {
   background-color: var(--green);
   height: columns(1);
   display: flex;
@@ -55,13 +55,13 @@
 }
 
 @include breakpoint(1000px) {
-  .nav {
+  #nav {
     padding: 0 units(1) 0 units(2);
   }
 }
 
 @include breakpoint(920px) {
-  .nav .menu-btn i {
+  #nav .menu-btn i {
     display: block;
   }
   
@@ -69,7 +69,7 @@
     content: "\f00d";
   }
   
-  .nav .nav-list {
+  #nav .nav-list {
     position: fixed;
     top: 80px;
     left: -100%;
