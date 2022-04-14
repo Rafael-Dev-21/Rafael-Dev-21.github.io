@@ -6,8 +6,8 @@
   
   grid-gap: units(.5);
   
-  grid-template-columns: 1fr;
-  grid-template-rows: 2 / auto;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
   
   @include breakpoint(small) {
     padding: units(.5, small);
