@@ -1,0 +1,22 @@
+#post {
+  margin: 10px auto;
+  
+  @for $i from 1 to 6 {
+    h#{$i} {
+      text-align: center;
+      padding: 5px;
+    }
+  }
+  
+  h1, h2 {
+    color: var(--green);
+  }
+  
+  h3 {
+    margin-bottom: dashed 1.3px var(--green);
+  }
+  
+  p {
+    padding: 2px;
+  }
+}
