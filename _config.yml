@@ -19,9 +19,14 @@ timezone: America/Sao_Paulo
 
 url: "https://rafael-dev-21.github.io"
 
+permalink: /blog/:year/:month/:day/:title
+
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
   - jekyll-autoprefixer
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo
