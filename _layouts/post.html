@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">Criado em {{ page.date | date_to_string }}</p>
-<blockquote><p><em>{{ page.description }}</em></p></blockquote>
-<article itemscope itemtype="http://schema.org/BlogPosting" class="post">
-  {{ content | toc }}
-</article>
-
-<p class="meta">Modificado em <em>{{ page.last_modified_at | date_to_string }}</em></p>
+{% if page.hero %}
+  <img src="{{ page.hero }}">
+{% endif %}
+{% if page.title %}
+  <h1>{{ page. title }}</h1>
+{% else %}
+  <h1>Post Sem Título</h1>
+{% endif %}
+{{ page.date | date: "%b %d, %Y" }}
+{{ content }}

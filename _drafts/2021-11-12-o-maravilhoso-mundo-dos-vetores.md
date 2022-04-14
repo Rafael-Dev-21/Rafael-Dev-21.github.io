@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "O maravilhoso mundo dos vetores!"
-date: 2021-11-12 19:01:10
+date: 2021-11-12 19:01:10 -0300
 comments: true
 description: "Imagine um segmento de reta, e que ele tem módulo direção e sentido, e agora o use para calcular movimento, posição, direção, dimensões, etc."
 categories:

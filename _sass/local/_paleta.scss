@@ -1,4 +1,12 @@
-$green: #124A12;
-$white: #FDFDFD;
-$black: #000005;
-$red: #EE0111;
+$colors: ("black": #010112,
+  "white": #fefeed,
+  "green": #0aaa0b,
+  "red": #ee2211);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+    --#{$name}-dark: #{darken($color, 5%)};
+    --#{$name}-light: #{lighten($color, 5%)};
+  }
+}

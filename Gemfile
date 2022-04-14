@@ -1,16 +1,12 @@
 source "https://rubygems.org"
 
 gem 'jekyll'
-gem 'kramdown'
-gem 'kramdown-parser-gfm'
-gem 'github-pages'
+gem 'execjs', '2.7.0'
 
 group :jekyll_plugins do
-  gem 'jekyll-feed'
-  gem 'jekyll-admin'
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-autoprefixer', "1.0.1"
-  gem 'jekyll-archives'
-  gem 'jekyll-toc'
+  gem 'github-pages'
+  gem 'octopress', '~> 3.0'
+  gem 'jekyll-autoprefixer'
 end
+
+gem "webrick", "~> 1.7"

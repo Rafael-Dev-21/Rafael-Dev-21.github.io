@@ -1,5 +1,18 @@
-<nav class="navegacao">
-  {% for item in site.data.navbar %}
-    <a href="{{ item.link }}">{{ item.name }}</a>
-  {% endfor %}
+<nav class="nav">
+  <a href="/" class="logo">{{ site.title }}</a>
+  <input type="checkbox" id="menu-click">
+  <label for="menu-click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <ul class="nav-list">
+    {% for item in site.data.navbar %}
+    {% assign current = nil %}
+    {% if page.url == item.link %}
+      {% assign current = 'active' %}
+    {% endif %}
+    
+    <li><a href="{{ item.link }}" class="nav-link {{ current }}">{{ item.name }}</a></li>
+    
+    {% endfor %}
+  </ul>
 </nav>

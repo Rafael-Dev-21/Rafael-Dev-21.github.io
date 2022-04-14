@@ -1,0 +1,23 @@
+.lista {
+  display: grid;
+  list-style-type: none;
+  padding: units(.5);
+  margin: units(.5) auto 0;
+  
+  grid-gap: units(.5);
+  
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  
+  @include breakpoint(small) {
+    padding: units(.5, small);
+    margin: units(.5, small) auto 0;
+    grid-gap: units(.5, small);
+  }
+}
+
+.post {
+  padding: 8px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
