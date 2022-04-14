@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Eu fiz um jogo da cobrinha!"
-date: 2021-10-05 12:00:00 -0300
-last_modified_at: 2021-11-10 21:42:00 -0300
+date: 2021-10-05T12:00:00-0300
+last_modified_at: 2021-11-10T21:42:00-0300
 description: "Sim, exatamente como diz o título, talvez eu faça um tutorial."
 categories: 
   jogos
