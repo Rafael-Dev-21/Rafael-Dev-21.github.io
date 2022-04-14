@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "O Jogo Cobra foi refatorado!"
-date: 2021-10-06 12:00:00 -0300
-last_modified_at: 2021-11-07 18:41:00 -0300
+date: 2021-10-06T12:00:00-0300
+last_modified_at: 2021-11-07T18:41:00-0300
 description: "Eu refatorei o jogo da cobrinha, levou uma noite inteira acordado mas eu consegui, agora ele está mais mobile-friendly."
 categories:
   jogos

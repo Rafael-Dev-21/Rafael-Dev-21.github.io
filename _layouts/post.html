@@ -10,6 +10,7 @@ layout: default
   {% else %}
   <h1>Post Sem Título</h1>
   {% endif %}
-  <time datetime="{{ page.date }}">{{ page.date | date: "%b %d, %Y" }}</time>
+  <div><strong>Criado em:</strong> <time datetime="{{ page.date }}">{{ page.date | date: "%b %d, %Y" }}</time> <br /> <strong>Modificado em:</strong> <time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: "%b %d, %Y" }}</time></div>
+  <hr>
   {{ content }}
 </article>
