@@ -301,7 +301,6 @@ PLATFORMS
 DEPENDENCIES
   execjs (= 2.7.0)
   github-pages
-  jekyll
   jekyll-autoprefixer
   jekyll-feed
   jekyll-seo
