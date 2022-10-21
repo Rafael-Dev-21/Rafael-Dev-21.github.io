@@ -3,6 +3,8 @@ markdown: kramdown
 
 title: Rafael Dev 21
 
+theme: minima
+
 tagline: Meu blog pessoal
 
 description: Este site, criado com o intuito de ser uma página pessoal, publica conteúdos relacionados a matemática e programação.
