@@ -1,0 +1,34 @@
+---
+label: Base
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: last_modified_at
+  label: last_modified_at
+- type: boolean
+  name: comments
+  label: comments
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: boolean
+  name: math
+  label: math
+- type: boolean
+  name: toc
+  label: toc
