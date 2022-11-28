@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: single
 title: Sobre
-permalink: /sobre/
+permalink: "/sobre/"
+
 ---
 <div class="blorb">
   <h1>Victor Rafael Pereira Alves,</h1>
