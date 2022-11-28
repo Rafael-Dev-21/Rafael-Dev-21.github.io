@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title: Voltando a desenhar
-date: 2022-11-28 03:00:00 +0000
-last_modified_at: 2022-11-28 03:00:00 +0000
+date: 2022-11-28T03:00:00.000+00:00
+last_modified_at: 2022-11-28T03:00:00.000+00:00
 comments: true
 description: Revivendo o site com uma arte que eu fiz no papel em 2020 e passei pro
   digital ontem
