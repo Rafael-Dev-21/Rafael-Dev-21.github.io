@@ -15,7 +15,8 @@ tags:
 comments: true
 
 ---
-Depois de muito café e uma noite sem sono, eu terminei de refatorar o jogo da cobra, a versão refatorada está [disponível aqui.](https://rafael-dev-21.netlify.app/jogos/snake-refactor)
+Depois de muito café e uma noite sem sono, eu terminei de refatorar o jogo da cobra, a versão refatorada está disponível aqui.
+EDIT: Não existe mais.
 
 Agora com suporte mobile, múltiplas telas e eventos no Google Analytics.
 
