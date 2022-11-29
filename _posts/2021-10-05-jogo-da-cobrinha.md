@@ -12,6 +12,6 @@ tags:
 comments: true
 
 ---
-Eu fiz um jogo da [cobrinha](https://rafael-dev-21.netlify.app/snake). Ainda está muito ruim, mas é meu primeiro jogo completo. código fonte no [github](https://github.com/rafael-dev-21/SnakeClone), feito com [Jekyll](https://jekyllrb.com).
+Eu fiz um jogo da [cobrinha](/SnakeClone). Ainda está muito ruim, mas é meu primeiro jogo completo. código fonte no [github](https://github.com/rafael-dev-21/SnakeClone), feito com [Jekyll](https://jekyllrb.com).
 
 deixem sugestões do que fazer na próxima.
