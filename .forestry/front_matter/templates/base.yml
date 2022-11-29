@@ -32,7 +32,7 @@ fields:
 - type: boolean
   name: toc
   label: toc
-- name: image
+- name: og_image
   type: file
   config:
     maxSize: 64
