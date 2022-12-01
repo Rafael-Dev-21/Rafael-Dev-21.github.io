@@ -15,6 +15,8 @@ tags:
 math: false
 toc: true
 image: "/uploads/export202211271923450740.png"
+og_image: ''
+ads: true
 
 ---
 Revivendo o site, eu achei um desenho que eu fiz no papel em 2020, tirei uma foto com celular, abri o medi bang paint e passei a arte pro digital. Esse é o dragão encouraçado.
