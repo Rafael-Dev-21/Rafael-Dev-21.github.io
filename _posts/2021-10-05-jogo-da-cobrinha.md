@@ -10,6 +10,10 @@ tags:
 - html5
 - javascript
 comments: true
+ads: true
+math: false
+toc: false
+og_image: ''
 
 ---
 Eu fiz um jogo da [cobrinha](/SnakeClone). Ainda está muito ruim, mas é meu primeiro jogo completo. código fonte no [github](https://github.com/rafael-dev-21/SnakeClone), feito com [Jekyll](https://jekyllrb.com).
