@@ -25,6 +25,11 @@ permalink: /blog/:year/:month/:day/:title
 
 repository: Rafael-Dev-21/rafael-dev-21.github.io
 
+comments:
+  provider: disqus
+  disqus:
+    shortname: rafael-dev-21
+
 sass:
   sass_dir: _sass
   style: compressed
