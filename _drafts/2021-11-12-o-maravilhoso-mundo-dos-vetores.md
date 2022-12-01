@@ -1,24 +1,26 @@
 ---
 layout: post
-title: "O maravilhoso mundo dos vetores!"
-date: 2021-11-12 19:01:10 -0300
+title: O maravilhoso mundo dos vetores!
+date: 2021-11-12T19:01:10.000-03:00
 comments: true
-description: "Imagine um segmento de reta, e que ele tem módulo direção e sentido, e agora o use para calcular movimento, posição, direção, dimensões, etc."
-categories:
-  matemática
-  física
-  programação
+description: Imagine um segmento de reta, e que ele tem módulo direção e sentido,
+  e agora o use para calcular movimento, posição, direção, dimensões, etc.
+categories: matemática física programação
 tags:
-  - matemática
-  - programação
-  - javascript
-  - vetores
-  - geometria analítica
-  - física
+- matemática
+- programação
+- javascript
+- vetores
+- geometria analítica
+- física
 usemathjax: true
 toc: true
----
+ads: true
+math: true
+last_modified_at: 
+og_image: ''
 
+---
 ## Definições
 ![Um vetor 5x 3y](/images/vetor-5x3.png "[5, 3], um vetor em coordenadas cartesianas."){:.tofigure}
 
@@ -50,4 +52,4 @@ Os vetores podem ser representados de diversas formas em diferentes modelos de c
 
 ### Cartesianas
 
-Nesse modelo temos uma coordenada x e uma y. x é horizontal e y é vertical. pode ser extendida para 3d com uma coordenada z para a 
+Nesse modelo temos uma coordenada x e uma y. x é horizontal e y é vertical. pode ser extendida para 3d com uma coordenada z para a
