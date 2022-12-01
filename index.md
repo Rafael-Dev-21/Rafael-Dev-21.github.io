@@ -1,6 +1,6 @@
 ---
 layout: home
-ads: true
+ads: false
 title: ''
 date: 
 last_modified_at: 
