@@ -42,6 +42,7 @@ fields:
   label: Ads
   default: true
 pages:
+- _posts/2021-10-02-site-rafael-dev-21-no-ar.md
 - _posts/2021-10-06-jogo-cobra+refatorado.md
 - _posts/2021-11-02-numeros.md
 - _posts/2022-11-28-voltando-a-desenhar.md
