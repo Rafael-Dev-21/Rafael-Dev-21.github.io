@@ -40,3 +40,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo
   - jekyll-include-cache
+  - amp-jekyll
