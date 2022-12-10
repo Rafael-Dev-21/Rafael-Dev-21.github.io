@@ -19,7 +19,7 @@ locale: pt-BR
 
 timezone: America/Sao_Paulo
 
-url: "https://rafael-dev-21.github.io"
+url: /
 
 permalink: /blog/:year/:month/:day/:title
 
