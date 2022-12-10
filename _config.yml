@@ -19,7 +19,7 @@ locale: pt-BR
 
 timezone: America/Sao_Paulo
 
-url: /
+url: 
 
 permalink: /blog/:year/:month/:day/:title
 
