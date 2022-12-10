@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sobre
-permalink: sobre/
+permalink: "/sobre/"
 
 ---
 <div class="blorb">
