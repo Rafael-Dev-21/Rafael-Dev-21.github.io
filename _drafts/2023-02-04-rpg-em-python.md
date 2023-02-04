@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Programando Uma Batalha RPG em Python
-date: 
+date: 2023-02-04
 description: >-
   Nesse post eu irei ensinar-lhe a escrever um simples jogo de batalha por turnos em python, inspirado em meu projeto de "O mesmo jogo: em várias linguagens de programação".
 math: false
