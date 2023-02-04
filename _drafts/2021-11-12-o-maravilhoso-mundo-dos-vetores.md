@@ -40,7 +40,7 @@ Alguns usos dos vetores.
 
 Vetores tem grande utilidade na física, permitindo realizar cálculos de trajeto e velocidade, eu não sou tão bom em física, mas sei que a gravidade é um vetor:
 
-$\begin{qmatrix}0 \\ 9,8 \\ 0\end{qmatrix}$
+$$\begin{qmatrix}0 \\ 9,8 \\ 0\end{qmatrix}$$
 
 ### No mundo dos jogos
 
