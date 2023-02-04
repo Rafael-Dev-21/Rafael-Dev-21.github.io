@@ -35,3 +35,6 @@ collections:
       - label: Fórmulas
         name: math
         widget: boolean
+      - label: Corpo
+        name: body
+        widget: markdown
