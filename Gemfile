@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem 'octopress', '>= 3.0'
-gem 'execjs', '>= 2.7.0'
+gem 'execjs', '~> 2.7.0'
 
 group :jekyll_plugins do
   gem 'github-pages'
