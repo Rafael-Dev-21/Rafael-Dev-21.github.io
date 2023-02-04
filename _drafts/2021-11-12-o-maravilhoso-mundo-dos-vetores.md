@@ -17,7 +17,6 @@ tags:
   - vetores
   - geometria analítica
   - física
-usemathjax: true
 toc: true
 ads: true
 math: true
