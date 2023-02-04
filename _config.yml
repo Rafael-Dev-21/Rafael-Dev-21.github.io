@@ -3,8 +3,6 @@ markdown: kramdown
 
 title: Rafael Dev 21
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
 tagline: Meu blog pessoal
 
 description: Este site, criado com o intuito de ser uma página pessoal, publica conteúdos relacionados a matemática e programação.
@@ -20,8 +18,6 @@ locale: pt-BR
 timezone: America/Sao_Paulo
 
 url: 
-
-permalink: /blog/:year/:month/:day/:title
 
 repository: Rafael-Dev-21/rafael-dev-21.github.io
 

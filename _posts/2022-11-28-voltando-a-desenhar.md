@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: Voltando a desenhar
 date: 2022-11-28T03:00:00.000+00:00
 last_modified_at: 2022-11-28T03:00:00.000+00:00

@@ -1,0 +1,8 @@
+<nav class="navbar">
+  <a  href="/" class="navbar__title">{{ site.title }}</a>
+  <ul class="navbar__list">
+    {% for item in site.data.navbar %}
+    <li class="navbar__item {% if page.url == item.link %}navbar__item--active{% endif %}"><a href="{{ item.link }}" class="navbar__link">{{ item.nome }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

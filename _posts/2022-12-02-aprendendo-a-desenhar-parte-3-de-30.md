@@ -1,6 +1,6 @@
 ---
 ads: true
-layout: single
+layout: post
 title: Aprendendo a desenhar parte 3 de 30
 date: 2022-12-02 03:00:00 +0000
 last_modified_at: 2022-12-02 03:00:00 +0000

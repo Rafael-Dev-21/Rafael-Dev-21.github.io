@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: Lançado site Rafael Dev 21!
 date: 2021-10-02T12:00:00.000-03:00
 last_modified_at: 2021-11-07T18:36:00.000-03:00

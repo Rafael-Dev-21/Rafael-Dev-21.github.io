@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: O Jogo Cobra foi refatorado!
 date: 2021-10-06T12:00:00.000-03:00
 last_modified_at: 2021-11-07T18:41:00.000-03:00

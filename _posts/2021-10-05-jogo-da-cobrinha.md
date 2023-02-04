@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: Eu fiz um jogo da cobrinha!
 date: 2021-10-05T12:00:00.000-03:00
 last_modified_at: 2021-11-10T21:42:00.000-03:00

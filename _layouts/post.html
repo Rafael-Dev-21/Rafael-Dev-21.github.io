@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% if page.title %}
+<h1>{{ page.title }}</h1>
+{% else %}
+<h1>Post Sem Titulo</h1>
+{% endif %}
+{{ page.date | date: "%d %b, %Y" }}
+{{ content }}

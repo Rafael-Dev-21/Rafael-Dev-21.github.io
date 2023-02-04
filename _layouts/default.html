@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+      <!--[if IE]>
+        <script src="/assets/js/html5shiv.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+      <![endif]-->
+
+    {% seo %}
+    {% feed_meta %}
+  </head>
+  <body>
+    {% include navbar.html %}
+    {{ content }}
+    {% include footer.html %}
+
+    {% if page.math %}
+    {% include mathjax.html %}
+    {% endif %}
+  </body>
+</html>
