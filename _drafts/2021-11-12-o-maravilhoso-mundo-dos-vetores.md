@@ -18,11 +18,11 @@ toc: true
 ads: true
 math: true
 last_modified_at: 
-og_image: ''
+image: '/assets/images/vetor-5x3.png'
 
 ---
 ## Definições
-![Um vetor 5x 3y](/images/vetor-5x3.png "[5, 3], um vetor em coordenadas cartesianas."){:.tofigure}
+![Um vetor 5x 3y](/assets/images/vetor-5x3.png "[5, 3], um vetor em coordenadas cartesianas."){:.tofigure}
 
 P: O que são?
 
