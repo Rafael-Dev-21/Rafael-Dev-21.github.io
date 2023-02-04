@@ -1,7 +1,7 @@
 ---
 layout: post
 title: O maravilhoso mundo dos vetores!
-date: 2023-02-04 03:00:00
+date: 2023-02-04 03:00:00 -0300
 comments: true
 description: >-
   Imagine um segmento de reta, e que ele tem módulo direção e sentido, e agora o
