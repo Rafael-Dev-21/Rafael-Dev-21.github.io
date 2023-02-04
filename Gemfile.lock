@@ -29,7 +29,7 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    execjs (2.7.0)
+    execjs (2.8.1)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
@@ -248,7 +248,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redcarpet (3.5.1)
+    redcarpet (3.6.0)
     rexml (3.2.5)
     rouge (3.26.0)
     ruby2_keywords (0.0.5)
@@ -275,11 +275,10 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
+    webrick (1.8.1)
 
 PLATFORMS
   arm-linux-androideabi
-  ruby
 
 DEPENDENCIES
   amp-jekyll
@@ -294,4 +293,4 @@ DEPENDENCIES
   webrick (>= 1.7)
 
 BUNDLED WITH
-   2.1.4
+   2.4.6
