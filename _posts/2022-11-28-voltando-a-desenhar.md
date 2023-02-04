@@ -14,13 +14,12 @@ tags:
 - arte
 math: false
 toc: true
-image: "/uploads/export202211271923450740.png"
-og_image: ''
+image: "/assets/images/uploads/export202211271923450740.png"
 ads: true
 
 ---
 Revivendo o site, eu achei um desenho que eu fiz no papel em 2020, tirei uma foto com celular, abri o medi bang paint e passei a arte pro digital. Esse é o dragão encouraçado.
 
-![Desenho original](/uploads/img_20200601_200627.jpg "Full HD")
+![Desenho original](/assets/images/uploads/img_20200601_200627.jpg "Full HD")
 
-![Digital](/uploads/export202211271923450740.png "Que anatomia ferrada")
+![Digital](/assets/images/uploads/export202211271923450740.png "Que anatomia ferrada")

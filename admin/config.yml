@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editoral_workflow
+media_folder: "assets/images/uploads"
+
+collections:
+  - name: "post"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"},
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Data de Publicação", name: "date", widget: "datetime"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Categoria", name: "categories", widget: "string"}
+      - {label: "Etiquetas", name: "tags", widget: "list"}
+      - {label: "Fórmulas", name: "math", widget: "boolean"}

@@ -13,7 +13,7 @@ comments: true
 ads: true
 math: false
 toc: false
-og_image: ''
+image: ''
 
 ---
 Eu fiz um jogo da [cobrinha](https://rafael-dev-21.github.io/SnakeClone). Ainda está muito ruim, mas é meu primeiro jogo completo. código fonte no [github](https://github.com/rafael-dev-21/SnakeClone), feito com [Jekyll](https://jekyllrb.com).

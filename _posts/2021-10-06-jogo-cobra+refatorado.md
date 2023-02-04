@@ -16,7 +16,7 @@ comments: true
 ads: true
 toc: true
 math: false
-og_image: ''
+image: ''
 
 ---
 Depois de muito café e uma noite sem sono, eu terminei de refatorar o jogo da cobra, a versão refatorada está disponível aqui.

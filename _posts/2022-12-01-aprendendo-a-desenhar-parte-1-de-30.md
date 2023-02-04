@@ -14,13 +14,13 @@ tags:
 - arte
 math: false
 toc: false
-og_image: "/uploads/export202212010000031680.png"
+image: "/assets/images/uploads/export202212010000031680.png"
 
 ---
 Quando eu era mais novo (tá, não faz tanto tempo assim) eu gostava de desenhar, mas acabei parando por desânimo, já que não gostava do resultado e sentia que não estava fazendo progresso. Depois do meu último desenho, eu me senti animado para voltar a tentar.
 
 Eu estarei treinando desenho por um mês e irei documentar meu progresso aqui. Hoje eu fiz uma esfera para treinar luz e sombra, e fiz a lição extra do dia: uma maçã.
 
-![Uma esfera sombreada](/uploads/export202212010000031680.png "Parece de cera")
+![Uma esfera sombreada](/assets/images/uploads/export202212010000031680.png "Parece de cera")
 
-![Uma maçã](/uploads/export202212010014454220.png "Eu não morderia essa maçã")
+![Uma maçã](/assets/images/uploads/export202212010014454220.png "Eu não morderia essa maçã")

@@ -16,7 +16,7 @@ tags:
 - arte
 math: false
 toc: false
-og_image: "/uploads/export202212021017127520.png"
+image: "/assets/images/uploads/export202212021017127520.png"
 
 ---
 Hoje eu decidi aprender perspectiva, após alguns treinos com um ponto de fuga eu decidi que a imagem de hoje seria com dois.
@@ -25,4 +25,4 @@ De início eu só ia focar em perspectiva e forma, mas daí eu decidi experiment
 
 Eu também aprendi a usar a ferramenta de régua.
 
-![Um cubo em perspectiva com dois pontos de fuga e sombreamento](/uploads/export202212021017127520.png "Uma das linhas foi feita sem régua")
+![Um cubo em perspectiva com dois pontos de fuga e sombreamento](/assets/images/uploads/export202212021017127520.png "Uma das linhas foi feita sem régua")
