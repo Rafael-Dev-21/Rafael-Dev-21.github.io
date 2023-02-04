@@ -283,15 +283,15 @@ PLATFORMS
 
 DEPENDENCIES
   amp-jekyll
-  execjs (= 2.7.0)
+  execjs (>= 2.7.0)
   github-pages
   jekyll-autoprefixer
   jekyll-feed
   jekyll-include-cache
   jekyll-seo
   jekyll-sitemap
-  octopress (~> 3.0)
-  webrick (~> 1.7)
+  octopress (>= 3.0)
+  webrick (>= 1.7)
 
 BUNDLED WITH
    2.1.4
