@@ -20,3 +20,10 @@ tags:
   - jogo baseado em texto
 image: /uploads/capa-batalha-python.png
 ---
+
+## Introdução
+## Atores
+## Utilitários
+## Ciclo de Jogo
+## Juntando Tudo
+## Conclusão
