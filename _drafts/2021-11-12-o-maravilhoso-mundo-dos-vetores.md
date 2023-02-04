@@ -1,7 +1,7 @@
 ---
 layout: post
 title: O maravilhoso mundo dos vetores!
-date: 2023-02-04 03:00:00 -0300
+date: 2023-02-04 06:00:00
 comments: true
 description: >-
   Imagine um segmento de reta, e que ele tem módulo direção e sentido, e agora o
@@ -44,8 +44,7 @@ Alguns usos dos vetores.
 
 ### No mundo da física
 
-Vetores tem grande utilidade na física, permitindo realizar cálculos de trajeto e velocidade, eu não sou tão bom em física, mas sei que a gravidade é um vetor:
- \\\[\\begin\{bmatrix\}0 \\\\ 9,8 \\\\ 0\\end\{bmatrix\}\\\]
+Vetores tem grande utilidade na física, permitindo realizar cálculos de trajeto e velocidade, eu não sou tão bom em física, mas sei que a gravidade é um vetor: \\\[\\begin\{bmatrix\}0 \\\\ 9,8 \\\\ 0\\end\{bmatrix\}\\\]
 
 ### No mundo dos jogos
 
