@@ -2,12 +2,4 @@
 ---
 
 @import "main";
-
-{% if page.layout == "post" %}
 @import "post";
-.hero {
-  background-image: url({{ page.image }});
-  background-color: {{ page.hero_color }};
-  color: {{ page.title_color }};
-}
-{% endif %}
