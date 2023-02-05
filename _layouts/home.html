@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 ---
 
 <h1>Artigos/Posts</h1>
@@ -8,6 +9,7 @@ layout: default
 
 <article class="post"> 
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  {{ post.date }}
   <p> {{ post.description }} <a href="{{ post.url }}">Ler Mais</a></p>
 </article>
 
