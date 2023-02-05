@@ -2,8 +2,8 @@
 ads: true
 layout: post
 title: Aprendendo a desenhar parte 2 de 30
-date: '2022-12-01 03:00:00 +0300'
-last_modified_at: '2022-12-01 03:00:00 +0300'
+date: '2022-12-01 03:00:00 -0300'
+last_modified_at: '2022-12-01 03:00:00 -0300'
 comments: true
 description: 'O segundo post dessa série, hoje eu pintei um cenário simples'
 categories: arte
