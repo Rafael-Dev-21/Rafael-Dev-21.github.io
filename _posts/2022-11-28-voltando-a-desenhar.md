@@ -1,22 +1,23 @@
 ---
 layout: post
 title: Voltando a desenhar
-date: 2022-11-28T03:00:00.000+00:00
-last_modified_at: 2022-11-28T03:00:00.000+00:00
+date: '2022-11-28T03:00:00.000Z-0300'
+last_modified_at: '2022-11-28T03:00:00.000Z-0300'
 comments: true
-description: Revivendo o site com uma arte que eu fiz no papel em 2020 e passei pro
-  digital ontem
+description: >-
+  Revivendo o site com uma arte que eu fiz no papel em 2020 e passei pro digital
+  ontem
 categories: arte
 tags:
-- drawing
-- desenho
-- art
-- arte
+  - drawing
+  - desenho
+  - art
+  - arte
 math: false
 toc: true
-image: "/assets/images/uploads/export202211271923450740.png"
+image: /assets/images/uploads/export202211271923450740.png
 ads: true
-
+published: true
 ---
 Revivendo o site, eu achei um desenho que eu fiz no papel em 2020, tirei uma foto com celular, abri o medi bang paint e passei a arte pro digital. Esse é o dragão encouraçado.
 
