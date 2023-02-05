@@ -2,3 +2,4 @@ User-Agent: *
 Allow: /
 
 Sitemap: https://rafael-dev-21.netlify.app/sitemap.xml
+Sitemap: https://rafael-dev-21.github.io/sitemap.xml
