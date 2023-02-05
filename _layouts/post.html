@@ -3,7 +3,7 @@ layout: default
 published: true
 ---
 <article>
-  <header>
+  <header class="header">
     {% if page.image %}
       <img class="hero" src="{{ page.image }}" alt="{{ page.title }}">
     {% endif %}
@@ -15,4 +15,3 @@ published: true
   {{ page.date | date: "%d %b, %Y" }}
   {{ content }}
 </article>
-  
