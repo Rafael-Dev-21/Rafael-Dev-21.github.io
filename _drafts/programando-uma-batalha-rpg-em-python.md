@@ -8,10 +8,8 @@ description: >-
   linguagens de programação".
 math: false
 categories:
-  - tutorial
-  - programacao
-  - python
   - jogos
+  - tutorial
 tags:
   - python
   - rpg
