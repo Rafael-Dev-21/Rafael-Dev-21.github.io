@@ -8,8 +8,8 @@ description: >-
   linguagens de programação".
 math: false
 categories:
-  - tutorial/programação
-  - programação/python
+  - tutorial/programacao
+  - programacao/python
   - jogos
 tags:
   - python
@@ -18,6 +18,7 @@ tags:
   - programação
   - jogos
   - jogo baseado em texto
+  - programacao
 image: /uploads/capa-batalha-python.png
 ---
 ## Introdução
