@@ -43,6 +43,10 @@
   margin: 5px 2px;
 }
 
+.highlight {
+  overflow: scroll;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -51,3 +55,5 @@ a {
 img {
   max-width: 100%;
 }
+
+@import "vim";
