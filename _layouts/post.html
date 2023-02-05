@@ -1,9 +1,10 @@
 ---
 layout: default
-hero_color: white;
-title_color: black;
 ---
-<header class="hero">
+<header>
+{% if page.image %}
+<img class="hero" src="{{ page.image }}" alt="{{ page.title }}">
+{% endif %}
 {% if page.title %}
 <h1>{{ page.title }}</h1>
 {% else %}
