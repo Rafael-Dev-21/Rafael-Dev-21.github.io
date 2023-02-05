@@ -5,6 +5,7 @@
 
 .hero {
   background-image: url({{ page.image }});
+  background-color: white;
   background-color: {{ page.hero_color }};
   color: black;
   color: {{ page.title_color }};
