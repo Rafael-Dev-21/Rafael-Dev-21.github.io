@@ -1,6 +1,6 @@
 ---
 title: O maravilhoso mundo dos vetores!
-date: 2023-02-04 04:00:00 -02:00
+date: 2023-02-05 00:07:00 -02:00
 categories:
 - matemática
 - física
@@ -12,15 +12,15 @@ tags:
 - vetores
 - geometria analítica
 - física
-layout: post
 comments: true
 description: Imagine um segmento de reta, e que ele tem módulo direção e sentido,
   e agora o use para calcular movimento, posição, direção, dimensões, etc.
-toc: true
-ads: true
+toc: false
+ads: false
 math: true
-last_modified_at: 2023-02-04 17:39:00 -02:00
+last_modified_at: 2023-02-05 00:07:00 -02:00
 image: "/assets/images/vetor-5x3.png"
+layout: post
 ---
 
 ## Definições
@@ -56,4 +56,8 @@ Os vetores podem ser representados de diversas formas em diferentes modelos de c
 
 ### Cartesianas
 
-Nesse modelo temos uma coordenada x e uma y. x é horizontal e y é vertical. pode ser extendida para 3d com uma coordenada z para a
+Nesse modelo temos uma coordenada x e uma y. x é horizontal e y é vertical. pode ser extendida para 3d com uma coordenada z para a profundidade. Um vetor 3d pode ser usado em um espaço 3d para representar um ponto (z = 1) e uma força (z = 0).
+
+### Polares
+
+Um espaço de coordenadas baseadas em um ponto central (pólo), um ângulo em relação ao ponto e a distância até ele.
