@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Programando Uma Batalha RPG em Python
-date: 2023-02-04 00:00:00
+date: 2023-02-04 22:32:00
 description: >-
   Nesse post eu irei ensinar-lhe a escrever um simples jogo de batalha por
   turnos em python, inspirado em meu projeto de "O mesmo jogo: em várias
@@ -38,7 +38,7 @@ O objeto que me refiro é o da programação orientada a objetos? Bem, sim e nã
 
 Já falei o suficiente, vamos ao código.
 
-```python 
+```python
 # batalha.py, arquivo único, licença
 
 import random # nossa única dependência, o método random.randrange
@@ -47,7 +47,7 @@ import random # nossa única dependência, o método random.randrange
 class Ator:
   def __init__(self, nome, vida, ataque, auto_piloto):
     self.nome = nome
-    self.vida = vida 
+    self.vida = vida
     self.ataque = ataque
     self.auto_piloto = auto_piloto
   
@@ -71,7 +71,7 @@ class Ator:
     print(self.nome)
     print("-" * 16)
     print(" vida: " + str(self.vida))
-    print("-" * 16)
+    print("-" * 16) 
 ```
 
 Uma classe curta e simples, como deveria ser (coff coff). Não tem muito que explicar, esse ator é bem simples se comparado ao de alguma simulação normal, possuindo apenas o nescessário para funcionar. É possível extendê-lo com mais atributos e um sistema de nível, mas isso fica a cargo do leitor ou de um futuro artigo (não prometo nada, hehe).
@@ -80,10 +80,76 @@ Já podemos ir para o ciclo do jogo, mas primeiro irei fazer duas funções util
 
 ## Utilitários
 
-Nossa primeira função utilitária 
+Nossa primeira função utilitária imprime a introdução do jogo. Nesse caso é apenas um cabeçalho, mas poderia ter informações de direitos autorais e uma ajuda.
+
+```python
+def intro():
+  print("#" + "=" * 14 + "#")
+  print("# BATALHA  RPG #")
+  print("#" + "=" * 14 + "#")
+```
+
+A segunda função Imprime um menu e retorna a escolha do jogador. Minha função não lida com o caso do jogador escolher uma opção inválida, o jogo apenas ignora e o jogador perde a vez. O leitor é livre para fazer como quiser.
+
+```python
+def menu():
+  print("1) atacar")
+  print("2) analizar")
+  return int(input("? "))
+```
 
 ## Ciclo de Jogo
 
+Primeiro, uma função `turno`, que representa o que o jogador/máquina faz naquele turno. Se a versão do python da máquina do leitor permitir, você pode trocar o `if elif` por um `match case`.
+
+```python
+def turno(ator, alvo):
+  if ator.auto_piloto:
+    ator.atacar(alvo)
+  else:
+    ator.mostrar()
+    opcao = menu()
+    if opcao == 1:
+      ator.atacar(alvo)
+    elif opcao == 2:
+      alvo.mostrar()
+```
+
+Segundo, uma função `batalha`, que recebe o jogador e a máquina como entrada e armazena eles nas variáveis a e b. enquando b está vivo, roda um turno e troca o valor de a e b. No último turno, a mata b e os dois trocam de valor, então o vencedor está agora armazenado em b. Por fim, uma mensagem de vitória é impressa.
+
+```python
+def batalha(jogador, maquina):
+  a, b = jogador, maquina
+  while a.vida > 0:
+    turno(a, b)
+    a, b = b, a
+  print(b.nome + " venceu.")
+```
+
 ## Juntando Tudo
+
+Agora nós executamos o código. Para isso testamos se estamos em um arquivo que foi executado (`__main__`), ou uma biblioteca. Nós separamos o código interno em uma função `main` para evitar variáveis fantasma no escopo global.
+
+```python
+def main():
+  jogador = Ator("Você", 100, 10, false)
+  maquina = Ator("Goblin", 60, 6, true)
+  
+  intro()
+  batalha(jogador, maquina)
+
+
+
+if __name__ == "__main__":
+  main()
+```
+
+Agora basta rodar o programa e jogar o jogo.
+
+```terminal
+$ python batalha.py
+```
+
+![jogo rodando]({{ page.image }})
 
 ## Conclusão
