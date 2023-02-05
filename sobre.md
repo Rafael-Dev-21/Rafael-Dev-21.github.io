@@ -1,9 +1,9 @@
 ---
-layout: page
 title: Sobre
 permalink: "/sobre/"
-
+layout: page
 ---
+
 <div class="blorb">
   <h1>Victor Rafael Pereira Alves,</h1>
   <p>Rayquaza Boladão ou Rafael Dev 21 é um estudante, programador, youtuber e blogger desde 2021.</p>

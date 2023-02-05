@@ -1,39 +1,36 @@
-name: "Rafael Dev 21, O Rayquaza Boladão"
-markdown: kramdown
-
+---
 title: Rafael Dev 21
-
+timezone: America/Sao_Paulo
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+name: Rafael Dev 21, O Rayquaza Boladão
+markdown: kramdown
 tagline: Meu blog pessoal
-
-description: Este site, criado com o intuito de ser uma página pessoal, publica conteúdos relacionados a matemática e programação.
-
+description: Este site, criado com o intuito de ser uma página pessoal, publica conteúdos
+  relacionados a matemática e programação.
 author: Rayquaza Boladão
-
-webmaster_verifications: 
+webmaster_verifications:
   google: EhLlP5eAqwGihX9DZRwGECFJrUmv2NwhxN_EXh8po9w
   yandex: 6beae4c2deb8cf8a
-
 locale: pt-BR
-
-timezone: America/Sao_Paulo
-
 url: 
-
 repository: Rafael-Dev-21/rafael-dev-21.github.io
-
 comments:
   provider: disqus
   disqus:
     shortname: rafael-dev-21
-
 sass:
   sass_dir: _sass
   style: compressed
-
 plugins:
-  - jekyll-autoprefixer
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo
-  - jekyll-include-cache
-  - amp-jekyll
+- jekyll-autoprefixer
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo
+- jekyll-include-cache
+- amp-jekyll

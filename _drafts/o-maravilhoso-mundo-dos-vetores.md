@@ -1,28 +1,28 @@
 ---
-layout: post
 title: O maravilhoso mundo dos vetores!
-date: 2023-02-04 06:00:00
-comments: true
-description: >-
-  Imagine um segmento de reta, e que ele tem módulo direção e sentido, e agora o
-  use para calcular movimento, posição, direção, dimensões, etc.
+date: 2023-02-04 04:00:00 -02:00
 categories:
-  - matemática
-  - física
-  - programação
+- matemática
+- física
+- programação
 tags:
-  - matemática
-  - programação
-  - javascript
-  - vetores
-  - geometria analítica
-  - física
+- matemática
+- programação
+- javascript
+- vetores
+- geometria analítica
+- física
+layout: post
+comments: true
+description: Imagine um segmento de reta, e que ele tem módulo direção e sentido,
+  e agora o use para calcular movimento, posição, direção, dimensões, etc.
 toc: true
 ads: true
 math: true
-last_modified_at: 2023-02-04 19:39:00
-image: /assets/images/vetor-5x3.png
+last_modified_at: 2023-02-04 17:39:00 -02:00
+image: "/assets/images/vetor-5x3.png"
 ---
+
 ## Definições
 
 ![Um vetor 5x 3y](/assets/images/vetor-5x3.png "[5, 3], um vetor em coordenadas cartesianas."){: .tofigure}

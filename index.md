@@ -1,8 +1,7 @@
 ---
+title: ''
 layout: home
 ads: false
-title: ''
-date: 
 last_modified_at: 
 comments: false
 description: ''
@@ -11,5 +10,5 @@ tags: []
 math: false
 toc: false
 og_image: ''
-
 ---
+

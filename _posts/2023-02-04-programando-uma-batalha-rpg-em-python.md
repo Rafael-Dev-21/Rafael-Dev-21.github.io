@@ -1,25 +1,25 @@
 ---
-layout: post
 title: Programando Uma Batalha RPG em Python
-date: 2023-02-04 22:32:00
-description: >-
-  Nesse post eu irei ensinar-lhe a escrever um simples jogo de batalha por
-  turnos em python, inspirado em meu projeto de "O mesmo jogo: em várias
-  linguagens de programação".
-math: false
+date: 2023-02-04 20:32:00 -02:00
 categories:
-  - jogos
-  - tutorial
+- jogos
+- tutorial
 tags:
-  - python
-  - rpg
-  - batalha por turnos
-  - programação
-  - jogos
-  - jogo baseado em texto
-  - programacao
-image: /uploads/capa-batalha-python.png
+- python
+- rpg
+- batalha por turnos
+- programação
+- jogos
+- jogo baseado em texto
+- programacao
+layout: post
+description: 'Nesse post eu irei ensinar-lhe a escrever um simples jogo de batalha
+  por turnos em python, inspirado em meu projeto de "O mesmo jogo: em várias linguagens
+  de programação".'
+math: false
+image: "/uploads/capa-batalha-python.png"
 ---
+
 ## Introdução
 
 Você já jogou um daqueles RPGs eletrônicos onde você é um sujeito armado praticando genocídio com a população local de monstros? Realmente, esse tipo de jogo costuma ser difícil de pegar o jeito, com alguns títulos bastante complexos, mas com o tempo você já domina as estratégias necessárias para enfrentar os inimigos. Até você ficar forte o suficiente para apenas ficar apertando o botão de ataque sem parar, o que geralmente leva a um game over quando você encontra o primeiro inimigo minimamente competente.
