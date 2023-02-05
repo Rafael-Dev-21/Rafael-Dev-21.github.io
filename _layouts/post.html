@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+<header style="background-image: {{ page.image }}; background-color: white;">
 {% if page.title %}
 <h1>{{ page.title }}</h1>
 {% else %}
 <h1>Post Sem Titulo</h1>
 {% endif %}
+</header>
 {{ page.date | date: "%d %b, %Y" }}
 {{ content }}
