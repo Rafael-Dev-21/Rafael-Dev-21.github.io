@@ -93,6 +93,7 @@ A segunda função Imprime um menu e retorna a escolha do jogador. Minha funçã
 
 ```python
 def menu():
+  print("Você vê um goblin")
   print("1) atacar")
   print("2) analizar")
   return int(input("? "))
