@@ -3,6 +3,8 @@
 
 @import "main";
 
+{% if page.layout == "post" %}
+@import "post";
 .hero {
   background-image: url({{ page.image }});
   background-color: white;
@@ -10,3 +12,4 @@
   color: black;
   color: {{ page.title_color }};
 }
+{% endif %}
