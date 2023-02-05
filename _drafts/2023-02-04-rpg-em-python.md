@@ -132,8 +132,8 @@ Agora nós executamos o código. Para isso testamos se estamos em um arquivo que
 
 ```python
 def main():
-  jogador = Ator("Você", 100, 10, false)
-  maquina = Ator("Goblin", 60, 6, true)
+  jogador = Ator("Você", 100, 10, False)
+  maquina = Ator("Goblin", 60, 6, True)
   
   intro()
   batalha(jogador, maquina)
@@ -153,3 +153,5 @@ $ python batalha.py
 ![jogo rodando]({{ page.image }})
 
 ## Conclusão
+
+Espero que esse artigo tenha sido didático. Existem muitas formas de expandir esse jogo. Adicionar diferentes tipos de personagens, cada lado ter mais de um personagem, ou até mesmo um inventário. Isso fica a cargo do leitor ou de um possível futuro artigo (he he). Nos vemos por aí.
