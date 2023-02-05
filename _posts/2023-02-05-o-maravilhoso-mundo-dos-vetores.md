@@ -1,6 +1,6 @@
 ---
 title: O maravilhoso mundo dos vetores!
-date: 2023-02-05 00:16:00 -02:00
+date: 2023-02-05 00:18:00 -02:00
 categories:
 - matemática
 - física
@@ -18,7 +18,7 @@ description: Imagine um segmento de reta, e que ele tem módulo direção e sent
 toc: false
 ads: false
 math: true
-last_modified_at: 2023-02-05 00:16:00 -02:00
+last_modified_at: 2023-02-05 00:18:00 -02:00
 image: "/assets/images/vetor-5x3.png"
 layout: post
 ---
