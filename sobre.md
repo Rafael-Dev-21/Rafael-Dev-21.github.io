@@ -1,7 +1,8 @@
 ---
 title: Sobre
-permalink: "/sobre/"
+permalink: /sobre/
 layout: page
+published: true
 ---
 
 <div class="blorb">
@@ -21,9 +22,9 @@ layout: page
     
     <a href="https://youtube.com/playlist?list=PLJsfx7Z0sXi7FZyrqkoQaW0OruHpnjxo-">Playlist no YouTube</a>
     
-    [Repositório Github](https://github.com/rafael-dev-21/skill-fantasy)
+    <a href="https://github.com/rafael-dev-21/skill-fantasy">Repositório Github</a>
     
-    [Página no Itch.io](https://rafael-dev21.itch.io/skill-fantasy)
+    <a hef="https://rafael-dev21.itch.io/skill-fantasy">Página no Itch.io</a>
      </li>
    </ul>
 </div>
