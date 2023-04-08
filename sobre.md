@@ -1,8 +1,7 @@
 ---
 title: Sobre
-permalink: /sobre/
+permalink: "/sobre/"
 layout: page
-published: true
 ---
 
 <div class="blorb">
