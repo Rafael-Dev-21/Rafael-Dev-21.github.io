@@ -1,9 +1,9 @@
 ---
 title: Sobre
-permalink: /sobre/
+permalink: "/sobre/"
 layout: page
-published: true
 ---
+
 # Victor Rafael Pereira Alves,
 
 Rayquaza Boladão ou Rafael Dev 21 é um estudante, programador, youtuber e blogger desde 2021.
