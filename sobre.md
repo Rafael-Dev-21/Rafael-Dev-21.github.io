@@ -1,7 +1,8 @@
 ---
 title: Sobre
-permalink: "/sobre/"
+permalink: /sobre/
 layout: page
+published: true
 ---
 
 <div class="blorb">
@@ -13,4 +14,17 @@ layout: page
     <li><a href="https://youtube.com/channel/UCxJf-i1jIPZMrB7sp6RWIHw" target="_blank" rel="nofollow noopener">Youtube</a></li>
     <li><a href="https://rayquazaboladao.blogspot.com" target="_blank" rel="nofollow noopener">Blogspot</a></li>
   </ul>
+  <h2>Projetos</h2>
+  <ul>
+    <li>
+    <h3>Skill Fantasy</h3>
+    O jogo de sobrevivência/colônia e construção. Em desenvolvimento.
+    
+    <a href="https://youtube.com/playlist?list=PLJsfx7Z0sXi7FZyrqkoQaW0OruHpnjxo-">Playlist no YouTube</a>
+    
+    [Repositório Github](https://github.com/rafael-dev-21/skill-fantasy)
+    
+    [Página no Itch.io](https://rafael-dev21.itch.io/skill-fantasy)
+     </li>
+   </ul>
 </div>
