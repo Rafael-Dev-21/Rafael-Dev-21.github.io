@@ -57,4 +57,9 @@ img {
   height: auto;
 }
 
+body {
+  width: clamp(320px, 1200px, 100% - 2rem);
+  margin-inline: auto;
+}
+
 @import "vim";
