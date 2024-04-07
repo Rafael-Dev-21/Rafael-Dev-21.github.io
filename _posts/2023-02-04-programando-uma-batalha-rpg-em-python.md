@@ -18,6 +18,7 @@ description: 'Nesse post eu irei ensinar-lhe a escrever um simples jogo de batal
   de programação".'
 math: false
 image: "/uploads/capa-batalha-python.png"
+comments: true
 ---
 
 ## Introdução
