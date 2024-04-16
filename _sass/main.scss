@@ -58,7 +58,7 @@ img {
 }
 
 body {
-  width: Clamp(320px, 1200px, 100% - 2rem);
+  width: clamp(320px, 1200px, #{100% - 2rem});
   margin-inline: auto;
 }
 
