@@ -4,7 +4,7 @@ gem 'octopress', '>= 3.0'
 gem 'execjs', '~> 2.7.0'
 
 group :jekyll_plugins do
-  gem 'github-pages'
+  gem 'github-pages', '>= 229'
   gem 'jekyll-autoprefixer'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
