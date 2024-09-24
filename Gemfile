@@ -13,4 +13,4 @@ group :jekyll_plugins do
   gem 'amp-jekyll'
 end
 
-gem "webrick", ">= 1.7"
+gem "webrick", ">= 1.8.2"
