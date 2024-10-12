@@ -9,11 +9,10 @@ collections:
     title: Uploads
     output: true
 defaults:
-  -
-    scope:
-      path: _posts
-    values:
-      permalink: /:year/:month/:day/:slug
+- scope:
+    path: _posts
+  values:
+    permalink: "/:year/:month/:day/:slug"
 name: Rafael Dev 21, O Rayquaza Boladão
 markdown: kramdown
 tagline: Meu blog pessoal
