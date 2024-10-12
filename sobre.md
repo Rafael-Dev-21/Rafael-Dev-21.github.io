@@ -1,6 +1,6 @@
 ---
 title: Sobre
-permalink: "/sobre/"
+permalink: /sobre/
 layout: page
 ---
 
@@ -16,8 +16,8 @@ Esse sou eu. Nasci em 21 de Maio 2004, em Montes Claros, Minas Gerais.
 - [Outro Blog](https://rayquazaboladao.blogspot.com)
 
 ## Projetos
-- 
- ### Skill Fantasy
+
+### Skill Fantasy
  O jogo de sobrevivência/colônia e construção. Em desenvolvimento.
   - [Playlist no YouTube](https://youtube.com/playlist?list=PLJsfx7Z0sXi7FZyrqkoQaW0OruHpnjxo-)
   - [Repositório no Github](https://github.com/rafael-dev-21/skill-fantasy)
