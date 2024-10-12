@@ -1,14 +1,12 @@
 ---
 title: Sobre
-permalink: "/sobre/"
+permalink: /sobre/
 layout: page
 ---
 
-# Victor Rafael Pereira Alves,
+# Rafael 04th,
 
-Rayquaza Boladão ou Rafael Dev 21 é um estudante, programador, youtuber e blogger desde 2021.
-
-Esse sou eu. Nasci em 21 de Maio 2004, em Montes Claros, Minas Gerais.
+Rayquaza Boladão ou Rafael Dev 21 é um estudante, programador, youtuber e blogger.
 
 ## Onde está
 
