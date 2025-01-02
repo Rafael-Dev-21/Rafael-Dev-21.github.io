@@ -1,0 +1,7 @@
+pre {
+    overflow: scroll;
+	padding: units(0.5);
+	@include breakpoint(small) {
+		padding: units(0.5, small);
+	}
+}

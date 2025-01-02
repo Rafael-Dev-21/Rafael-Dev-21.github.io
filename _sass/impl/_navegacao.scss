@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__title {
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item {
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 3px;
+}
+
+.navbar__link {
+}
+
+.navbar__item--active {
+}

@@ -13,12 +13,12 @@
 
     {% seo %}
     {% feed_meta %}
-
-
   </head>
   <body>
     {% include navbar.html %}
+	<main id="content">
     {{ content }}
+	</main>
     {% include footer.html %}
 
     {% if page.math %}

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article>
+<article class="post">
   <header class="header">
     {% if page.title %}
       <h1>{{ page.title }}</h1>    {% else %}
@@ -11,6 +11,14 @@ layout: default
   </header>
   {{ page.date | date: "%d %b, %Y" }}
   {{ content }}
+  {% if page.tags %}
+  <hr>
+  <p>Tags: 
+  {% for tag in page.tags %}
+  	<em><strong>#{{ tag }}</strong></em>
+  {% endfor %}
+  </p>
+  {% endif %}
   <footer>
     <script id="diffblog-plugin-script" async="false" src="https://diff.blog/static/js/diffblog_plugin_v1.js"></script>
     <script>

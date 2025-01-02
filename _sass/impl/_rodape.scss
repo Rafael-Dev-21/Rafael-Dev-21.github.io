@@ -1,0 +1,7 @@
+footer {
+  padding: units(1);
+  
+  @include breakpoint(small) {
+    padding: units(1, small);
+  }
+}

@@ -1,2 +1,6 @@
 _site/
 .jekyll-metadata
+Gemfile.lock
+gemfile.lock
+package-lock.json
+*.lock

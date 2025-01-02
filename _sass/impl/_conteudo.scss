@@ -1,0 +1,35 @@
+hr {
+  border-bottom: solid 2.5px black;
+}
+
+.post {
+  width: columns(5);
+  margin: units(2) auto units(1);
+  padding: units(1);
+  border-bottom: solid 1px black;
+
+  @include breakpoint(small) {
+	  width: columns(5, small);
+	  margin: units(2, small) auto units(1, small);
+	  padding: units(1, small);
+  }
+
+  > * {
+	  margin: units(1) 0;
+  }
+
+  img {
+	  max-width: 100%;
+	  height: auto;
+	  box-shadow: 3px 3px 2px 0.5 black;
+  }
+}
+
+body {
+  font-family: 'EB Garamond', 'Times New Roman', roman, serif;
+  width: clamp(#{columns(5.5, small)}, calc(100% - #{units(0.5)}), #{colums(5.5)});
+  @include breakpoint(small) {
+	  width: clamp(#{colums(5.5, small)}, calc(100% - #{units(0.5, small)}), #{columns(5.5)});
+  }
+  margin-inline: auto;
+}
