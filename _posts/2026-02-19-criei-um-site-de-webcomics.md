@@ -23,11 +23,11 @@ Recentemente, finalmente decidir o pôr em ação.
 
 Publicar webcomics. É um sonho antigo. Um sonho tolo. Mas mesmo assim, decidir arriscar uma chance.
 
-Por que criar um site ao invés de usar um existente como o <a href="https://flitru.com.br" rel="norel nofollow" class="u-url">fliptru</a>, a qual nem sequer posso deixar de recomendar bastante? Não sei.
+Por que criar um site ao invés de usar um existente como o <a href="https://flitru.com.br" rel="norel nofollow">fliptru</a>, a qual nem sequer posso deixar de recomendar bastante? Não sei.
 
 Quando eu vi, eu já tinha feito o site, então decidi usar. De certa forma, ter um site pessoal trás certa euforia.
 
-Sem mais enrolação, <a href="https://rafa4comics.netlify.app" hreflang="en" rel="me" class="u-url">aqui</a> um link para o site. Ele é em inglês, para maior alcance.
+Sem mais enrolação, <a href="https://rafa4comics.netlify.app" hreflang="en" rel="me">aqui</a> um link para o site. Ele é em inglês, para maior alcance.
 
 Ainda faltam muitas coisas, uma delas é o suporte a mútiplos idiomas. Claro, inglês tem mais alcance, mas eu ainda tenho amor a nação :-).
 
