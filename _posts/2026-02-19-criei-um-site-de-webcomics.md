@@ -31,6 +31,6 @@ Sem mais enrolação, <a href="https://rafa4comics.netlify.app" hreflang="en" re
 
 Ainda faltam muitas coisas, uma delas é o suporte a mútiplos idiomas. Claro, inglês tem mais alcance, mas eu ainda tenho amor a nação :-).
 
-<a href="https://rafa4comics.netlify.app/comic/gojumpjr/001-simple-job/" hreflang="en" class="u-url">Aqui</a> um link para a primeira página publicada. A história se chama Go Jump Jr., e é uma comédia de ficção ciêtifíca que acompanha um capitão espacial preguiçoso e suas aventuras e enrascadas.
+<a href="https://rafa4comics.netlify.app/comic/gojumpjr/001-simple-job/" hreflang="en" rel="rel webmention" class="u-url">Aqui</a> um link para a primeira página publicada. A história se chama Go Jump Jr., e é uma comédia de ficção ciêtifíca que acompanha um capitão espacial preguiçoso e suas aventuras e enrascadas.
 
 Espero que possamos acompanhar essa e futuras histórias juntos! O que será que o futuro guarda ;-)?
