@@ -1,0 +1,4 @@
+POST /IndexNow HTTP/1.1
+Host: api.indexnow.org
+Content-Type: application/json; charset=utf-8
+{"host": "rafa4comics.netlify.app", "key": "bed7f7d8f544484fb02d7d6b3831e34f", "keyLocation": "https://rafa4comics.netlify.app/bed7f7d8f544484fb02d7d6b3831e34f.txt", "urlList": [ "https://rafa4comics.netlify.app/", "https://rafa4comics.netlify.app/comic/", "https://rafa4comics.netlify.app/comic/gojumpjr/", "https://rafa4comics.netlify.app/comic/gojumpjr/001-simple-job/", "https://rafa4comics.netlify.app/categories/", "https://rafa4comics.netlify.app/tags/" ]}
