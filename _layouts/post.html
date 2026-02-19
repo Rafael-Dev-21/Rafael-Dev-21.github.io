@@ -2,23 +2,26 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post h-entry">
   <header class="header">
     {% if page.title %}
-      <h1>{{ page.title }}</h1>    {% else %}
-      <h1>Post Sem Titulo</h1>
+      <h1 class="p-name">{{ page.title }}</h1>    {% else %}
+      <h1 class="p-name">Post Sem Titulo</h1>
     {% endif %}
   </header>
-  {{ page.date | date: "%d %b, %Y" }}
-  {{ content }}
+  <time datetime="{{ page.date }}" class="dt-p7blished">{{ page.date | date: "%d %b, %Y" }}</time>
+  <div class="e-content">
+    {{ content }}
+  </div>
   {% if page.tags %}
   <hr>
-  <p>Tags: 
+  <p class="h-list">Tags: 
   {% for tag in page.tags %}
-  	<em><strong>#{{ tag }}</strong></em>
+  	<em class="h-item"><strong>#{{ tag }}</strong></em>
   {% endfor %}
   </p>
   {% endif %}
+  <p>Por: <a class="p-author p-name h-card vcard fn p-url url" href="/sobre" rel="me">Rafael 04th</a></p>
   <footer>
     <script id="diffblog-plugin-script" async="false" src="https://diff.blog/static/js/diffblog_plugin_v1.js"></script>
     <script>
@@ -28,28 +31,7 @@ layout: default
         );
       });
     </script>
-    
-      {% if page.comments %}
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = {{ page.url }};  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = {{ page.url }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://rafael-dev-21.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+
+    {% include webmentions.html %}
   </footer>
 </article>

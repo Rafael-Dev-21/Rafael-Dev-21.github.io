@@ -1,0 +1,36 @@
+{% if page.comments %}
+  <div>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <section class="h-feed"
+             x-data="{ mentions: [], loading: true }"
+             x-init="fetch('https://webmention.io/api/mentions.jf2?target={{ site.url }}{{ page.url }}')
+                    .then(response => response.json())
+                    .then(data => { mentions = data.children; loading = false })">
+      <h2 class="p-name">Mentions</h2>
+
+      <template x-if="loading">
+        <p>Loading mentions...</p>
+      </template>
+
+      <template x-for="mention in mentions" :key="mention['wm-id']">
+        <article class="mention h-entry" style="border-left: 2px solid #00ffcc; padding-left: 1rem; margin-bottom: 2rem;">
+          <a class="h-card vcard p-author" :href="mention.author.url" style="display: flex; align-items: center; gap: 10px;">
+            <img :src="mention.author.photo" :alt="mention.author.name" width="40" height="40" class="u-photo photo" style="border-radius: 50%;">
+            <cite x-text="mention.author.name" class="p-name fn"></cite>
+          </a>
+          <blockquote
+            x-show="mention.content && mention.content.text"
+            x-text="mention.content ? mention.content.text : ''"
+            class="e-content"
+            style="margin: 1rem 0; font-style: italic;">
+          </blockquote>
+          <a class="u-url" :href="mention.url" style="font-size: 0.8rem; opacity: 0.7;">View Original Source</a>
+          <hr style="border: 0; border-top: 1px solid #333; margin-top: 1rem;"/>
+        </article>
+      </template>
+      <template x-if="!loading && mentions.length === 0">
+        <p>No mentions yet.</p>
+      </template>
+    </section>
+  </div>
+{% end %}
