@@ -9,7 +9,7 @@ layout: default
       <h1 class="p-name">Post Sem Titulo</h1>
     {% endif %}
   </header>
-  <time datetime="{{ page.date }}" class="dt-p7blished">{{ page.date | date: "%d %b, %Y" }}</time>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="dt-published">{{ page.date | date: "%d %b, %Y" }}</time>
   <div class="e-content">
     {{ content }}
   </div>

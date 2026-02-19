@@ -8,7 +8,7 @@ layout: default
 {% for post in site.posts %}
 
 <article class="post h-entry">
-  <h2 class="fn p-name"><a href="{{ post.url }}" class="u-url"> { post.title }}</a></h2>
+  <h2 class="fn p-name"><a href="{{ post.url }}" class="u-url">{{ post.title }}</a></h2>
   <time datetime="{{ post.date }}" class="dt-published">{{ post.date | date: "%d %b, %Y" }}</time>
   <p class="p-summary">{{ post.description }} <a href="{{ post.url }}" class="url u-url">Ler Mais</a></p>
 </article>
