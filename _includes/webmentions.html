@@ -1,9 +1,35 @@
 {% if page.comments %}
   <div>
+<form
+  id="webmention-form"
+  action="https://webmention.io/rafael-dev-21.github.io/webmention"
+  method="POST"
+>
+  <label for="webmention-form"
+    >Aqui você pode marcar seu post que linka para esse post para registrar a menção.</label
+  >
+
+  <input
+    id="webmention-source"
+    type="url"
+    autocomplete="url"
+    required=""
+    pattern="^https?:\/\/(.*)"
+    name="source"
+    placeholder="URL/Permalink of your article"
+    class="error"
+    aria-invalid="true"
+  />
+
+  <input id="webmention-submit" type="submit" name="submit" value="Ping me!" />
+
+  <input id="webmention-format" type="hidden" name="format" value="html" />
+  <input id="webmention-target" type="hidden" name="target" value="{{ site.url }}{{ page.url }}&token=C3gClY2tFrCbTvzZydUcAg" />
+</form>
     <script src="//unpkg.com/alpinejs" defer></script>
     <section class="h-feed"
              x-data="{ mentions: [], loading: true }"
-             x-init="fetch('https://webmention.io/api/mentions.jf2?target={{ site.url }}{{ page.url }}')
+             x-init="fetch('https://webmention.io/api/mentions.jf2?target={{ site.url }}{{ page.url }}&token=C3gClY2tFrCbTvzZydUcAg')
                     .then(response => response.json())
                     .then(data => { mentions = data.children; loading = false })">
       <h2 class="p-name">Mentions</h2>
