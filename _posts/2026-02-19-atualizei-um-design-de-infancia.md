@@ -25,7 +25,7 @@ Como resultado, no último dia 14 de fevereiro, eu decidi refazer um design que 
         src="/uploads/az-original-sheet.jpg"
         alt="ficha de modelo de um robô estilo power ranger feito por eu criança. frente verso."
         width="2392"
-        height="2968"></img>
+        height="2968">
     <figcaption>AZ em sua glória original de lápis de cor e caneta BIC.</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Agora, sem mais delongas, vejam como ficou o redesign:
         src="/uploads/az-2026-02-14-updated-sheet.png"
         alt="ficha de modelo de um robô de combate surrado em arte digital. frente verso."
         width="4314"
-        height="4314"></img>
+        height="4314">
     <figcaption>AZ de combate surrado em arte digital.</figcaption>
 </figure>
 
