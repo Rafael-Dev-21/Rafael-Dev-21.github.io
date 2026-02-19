@@ -23,7 +23,7 @@ Recentemente, finalmente decidir o pôr em ação.
 
 Publicar webcomics. É um sonho antigo. Um sonho tolo. Mas mesmo assim, decidir arriscar uma chance.
 
-Por que criar um site ao invés de usar um existente como o <a href="https://flitru.com.br" rel="norel nofollow">fliptru</a>, a qual nem sequer posso deixar de recomendar bastante? Não sei.
+Por que criar um site ao invés de usar um existente como o <a href="https://fliptru.com.br" rel="norel nofollow">fliptru</a>, a qual nem sequer posso deixar de recomendar bastante? Não sei.
 
 Quando eu vi, eu já tinha feito o site, então decidi usar. De certa forma, ter um site pessoal trás certa euforia.
 
