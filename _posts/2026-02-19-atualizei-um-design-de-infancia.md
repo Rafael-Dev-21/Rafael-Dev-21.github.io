@@ -9,6 +9,7 @@ tags:
 layout: post
 last_modified_at: 2026-02-19 15-49-53 -0300
 description: Nesse mês eu venho desenhado bastante, e por isso no último dia 14 eu decidi refazer um design que fiz quando criança! Quer conferir como ficou? Clica em
+image: /uploads/az-original-sheet.jpg
 comments: true
 math: false
 toc: true
