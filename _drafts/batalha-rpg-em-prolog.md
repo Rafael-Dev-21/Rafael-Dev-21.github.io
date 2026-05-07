@@ -25,7 +25,9 @@ toc: true
 
 Yohoho, a quanto tempo! Como vocês estão? (Como se tivesse alguém lendo esse blog). Bem, eu andei lendo uma coisa ou outra. Toda essa leitura eventualmente me levou a tentar aprender lógica formal. Primeiro de proposições, então de predicados. Se você, caro leitor, não nerd quanto eu você provavelmente não entendeu nada do que eu escrevi nem a relação disso tudo com o título. Se eu tivesse que chutar, eu diria que você clicou por causa das palavras «batalha» e «rpg» no título, ou porque ficou curioso sobre o que raios é prolog. Se você realmente clicou por causa do prolog, provavelmente somos da mesma ala do hospicio.
 
-Voltando ao tópico. Estudar sobre lógica me levou a aprender sobre [cláusulas de Horn (em inglês)](https://em.wikipedia.org/wiki/Horn_clause). Uma cláusula de Horn é uma cláusula lógica em que, pelo menos uma de suas preposições, é verdadeira. Imagine assim, você tem uma suposição, e para ela ser verdadeira, várias outras devem ser verdadeiras primeiro.
+Esse post implementa o mesmo jogo que [um artigo anterior](/2023/02/04/programando-uma-batalha-rpg-em-python), e faz parte de [um projeto maior](https://github.com/Rafael-Dev-21/batalha-rpg).
+
+Voltando ao tópico. Estudar sobre lógica me levou a aprender sobre [cláusulas de Horn (em inglês)](https://em.wikipedia.org/wiki/Horn_clause). Uma cláusula de Horn é uma cláusula lógica em que, pelo menos uma de suas proposições, é verdadeira. Imagine assim, você tem uma suposição, e para ela ser verdadeira, várias outras devem ser verdadeiras primeiro.
 
 ```
 tem_penas E pia E bota_ovo ENTÃO é_pássaro.
@@ -54,7 +56,7 @@ Por quê eu estou falando de cláusulas de Horn? Ora, por um motivo bem simples:
 
 ## Legal, mas e Prolog?
 
-Prolog é uma linguagem de programação declarativa. Mais especificamente, uma linguagem de programação lógica. Programação lógica usa-se apenas de predicados e inferencia. Um predicado é uma função que retorna verdadeiro ou falso. Inferência é o processo do programa tentar chegar a uma conclusão baseado em seu conhecimento. Prolog usa cláusulas Horn.
+Prolog é uma linguagem de programação declarativa. Mais especificamente, uma linguagem de programação lógica. Programação lógica usa-se apenas de predicados e inferência. Um predicado é uma função que retorna verdadeiro ou falso. Inferência é o processo do programa tentar chegar a uma conclusão baseado em seu conhecimento. Prolog usa cláusulas Horn.
 
 ```prolog
 homem(socrates). % um fato
@@ -90,7 +92,7 @@ Agora podemos fazer uma pesquisa:
   true.
 ```
 
-O programa consultou nossa base de conhecimento, e chegou a uma conclusão. Prolog usa um algoritmo chamado unificação. Unificação é um algoritmo que tenta tornar tudas expressões em iguais. Unificação tem três tipos de entidades. Constantes só podem ser iguais a elas mesmas. Variavéis, podem ser presas (bound) ou soltas (unbound). Ao unificar duas variáveis soltas, uma vira um apelido da outra. Ao unificar uma variavél solta com uma constante ou estrutura, ela se torna presa a essa constante ou estrutura. Variáveis presas só se unificam se o valor unificado for o mesmo que a variável já tem. Estruturas tem um nome e parâmetros. Uma estrutura só unifica se ambos tiverem o mesmo nome e se todos os parâmetros também unificam. Se tudo correr bem, o programa unifica e conclui, se não ocorre uma falha.
+O programa consultou nossa base de conhecimento, e chegou a uma conclusão. Prolog usa um algoritmo chamado unificação. Unificação é um algoritmo que tenta tornar todas as expressões em iguais. Unificação tem três tipos de entidades. Constantes só podem ser iguais a elas mesmas. Variavéis, podem ser presas (bound) ou soltas (unbound). Ao unificar duas variáveis soltas, uma vira um apelido da outra. Ao unificar uma variável solta com uma constante ou estrutura, ela se torna presa a essa constante ou estrutura. Variáveis presas só se unificam se o valor unificado for o mesmo que a variável já tem. Estruturas tem um nome e parâmetros. Uma estrutura só unifica se ambos tiverem o mesmo nome e se todos os parâmetros também unificam. Se tudo correr bem, o programa unifica e conclui, se não ocorre uma falha.
 
 Em caso de falha, o prolog usa outro algoritmo chamado backtracking. É o mesmo algoritmo usado em bots de xadrez. A medida que o programa vai avançando, ele vai armazenando pontos de decisão. Se ocorrer uma falha, o programa volta no último ponto de decisão, soltando as variáveis que foram presas após esse ponto, e tenta a outrs alternativa. Ele continua até conseguir, retornando um sucesso. Se não conseguir, ele retorna uma falha. Prolog funciona em partes como uma linguagem de programação e em partes como um banco de dados.
 
@@ -116,7 +118,7 @@ Depois, definimos dois fatos, jogador e máquina. Eles vão armazenar os valores
 
 ```prolog
 jogador(ator('Você', 100, 10, false)).
-maquina(ator('Goblin, 66, 6, true)).
+maquina(ator('Goblin', 60, 6, true)).
 ```
 
 Agora, vamos definir alguns predicatos adicionais para extrair um valor de um ator. Em prolog, o jeito de retornar um valor de uma regra é definindo ele como um dos parâmetros.
@@ -139,18 +141,18 @@ toma_hit(ator(Nome, Vida, Ataque, AutoPiloto), Dano, ator(Nome, NovaVida, Ataque
     NovaVida is max(0, Vida - Dano).
 ```
 
-TODO!
+O predicato de ataque define um fluxo completo de lógica. Unifica dano, imprime mensagem e unifica um novo alvo, mantendo o original imutável.
 
 ```prolog
 atacar(Ator, Alvo, NovoAlvo) :-
     dano(Ator, Dano),
-    nome(Ator AtorNome),
+    nome(Ator, AtorNome),
     nome(Alvo, AlvoNome),
     write(AtorNome), write(' atacou '), write(AlvoNome), write(' causando '), write(Dano), write(' de dano'), nl,
     toma_hit(Alvo, Dano, NovoAlvo).
 ```
 
-TODO!
+Mostrar é bem auto evidente e sem mistérios. Apenas imprime informação em formato agradável.
 
 ```prolog
 mostrar(ator(Nome, Vida, _, _)) :-
@@ -163,7 +165,9 @@ mostrar(ator(Nome, Vida, _, _)) :-
 
 ### Utilitários
 
-TODO!
+Agora os predicados de suporte!
+
+`intro` imprime um cabeçalho bonito para o jogo.
 
 ```prolog
 intro :-
@@ -172,7 +176,7 @@ intro :-
     write('#==============#'), nl.
 ```
 
-TODO!
+O `menu` usa uma técnica chamada recursão para loop. Enquanto o usuárip não digitar algo válido, ele continua chamando a si mesmo.
 
 ```prolog
 menu(Opcao) :-
@@ -185,7 +189,7 @@ menu(Opcao) :-
         write('Opção inválida! Tente novamente.'), nl, menu(Opcao)).
 ```
 
-TODO!
+Este predicato, `checar_vida`, verifica se alguém morreu e unifica um vencedor. Ele usa o predicado `fail` para tentar outro turno.
 
 ```prolog
 checar_vida(Ator, Alvo, Vencedor) :-
@@ -196,7 +200,12 @@ checar_vida(Ator, Alvo, Vencedor) :-
 
 ### Batalha!!
 
-TODO!
+Agora a batalha, o coração e cérebro do jogo.
+
+`turno` é o predicado mais complexo. Ele:
+1. Verifica se alguém já morreu
+2. Caso o ator seja ia, ataca e passa vez
+3. Casp ator, mostra estado, pede input, executa ação e passa turno
 
 ```prolog
 turno(Ator, Alvo, Vencedor) :-
@@ -212,7 +221,7 @@ turno(Ator, Alvo, Vencedor) :-
         turno(NovoAlvo, Ator, Vencedor)).
 ```
 
-TODO!
+`batalha/2` inicia o loop e imprime vencedor. O cut (`!`) previne backtracking após vitória. Sem ele, o prolog poderia tentar encontrar novas soluções para o jogo mesmo após terminar.
 
 ```prolog
 batalha(Jogador, Maquina) :-
@@ -222,7 +231,7 @@ batalha(Jogador, Maquina) :-
     !.
 ```
 
-TODO!
+`go/0` é o ponto de entrada do jogo, e apenas amarra tudo que fizemos até agora.
 
 ```prolog
 go :-
@@ -234,7 +243,7 @@ go :-
 
 ## Programa Completo
 
-TODO!
+Aqui todo o programa completo para aqueles que pularam até o fim.
 
 ```
 :- use_module(library(random)).
@@ -254,11 +263,11 @@ dano(ator(_, _, Ataque, _), Dano) :-
 toma_hit(ator(Nome, Vida, Ataque, AutoPiloto), Dano, ator(Nome, NovaVida, Ataque, AutoPiloto)) :-
 	NovaVida is max(0, Vida - Dano).
 
-atacar(Eu, Alvo, NovoAlvo) :-
-	nome(Eu, EuNome),
+atacar(Ator, Alvo, NovoAlvo) :-
+	nome(Ator, AtorNome),
 	nome(Alvo, AlvoNome),
-	dano(Eu, Dano),
-	write(EuNome), write(' atacou '), write(AlvoNome), write(', causando '), write(Dano), write(' de dano'), nl,
+	dano(Ator, Dano),
+	write(AtorNome), write(' atacou '), write(AlvoNome), write(', causando '), write(Dano), write(' de dano'), nl,
 	toma_hit(Alvo, Dano, NovoAlvo).
 
 mostrar(ator(Nome, Vida, _, _)) :-
@@ -273,14 +282,14 @@ intro :-
 	write('# BATALHA  RPG #'), nl,
 	write('#==============#'), nl.
 
-menu(Ator) :-
+menu(Opcao) :-
 	write('Você vê um goblin'), nl,
 	write('1) atacar'), nl,
 	write('2) analizar'), nl,
 	write('? '),
 	read_line_to_string(user_input, Input),
-	(catch(atom_number(Input, Result), _, fail), member(Result, [1, 2]) -> true;
-		write('Entrada invalida! Tente novamente.'), nl, menu(Ator)).
+	(catch(atom_number(Input, Opcao), _, fail), member(Opcao, [1, 2]) -> true;
+		write('Opção inválida! Tente novamente.'), nl, menu(Opcao)).
 
 checar_vida(Ator, Alvo, Vencedor) :-
 	(vida(Ator, VidaAtor), VidaAtor =< 0 -> Vencedor = Alvo;
@@ -314,7 +323,7 @@ go :-
 
 ## Testando o jogo
 
-TODO!
+Chegou a hora de tirar proveito do nosso esforço!
 
 ```bash
 $ swipl
@@ -398,6 +407,6 @@ true.
 
 ## Conclusões
 
-TODO!
+Bem, esse artigo só levou um dois anos para concluir após abandoná-lo em 2024 ou 2025. Mas ele não podia permanecer abandonado! Aqui demonstro o poder de prolog, e ainda é uma demostração bem pequena!
 
-CALLTOACTION!
+Comentem o que acharam, tentem expadir esse jogo vocês mesmos, tem uma olhada no [repo](https://github.com/Rafael-Dev-21/batalha-rpg), e se vocês quiserem uma real demonstração do poder de prolog, confiram [power of prolog (em inglês)](https://www.metalevel.at/prolog).
